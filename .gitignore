@@ -1,10 +1,26 @@
 # Secrets — never commit
 .env
 
-# Demo output written during a live recording run
-experiment/demo_runs/
-
-# Python caches / venv
+# Python caches / virtual env
 __pycache__/
 *.py[cod]
 .venv/
+venv/
+
+# Demo output written during a live recording run
+experiment/demo_runs/
+
+# AutoML-Agent runtime output (created when you run it)
+agent_workspace/
+outputs/
+models/
+metadata/
+artifacts/
+reports/
+catboost_info/
+.gradio/
+data/
+*.log
+pipeline_log.json
+project_config.json
+user_requirements.json

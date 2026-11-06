@@ -6,9 +6,9 @@ This repo exists for one deliverable: a **screen recording that proves, live, th
 the LLM-powered AutoML system AutoML-Agent generates broken code** — you hand it a
 dataset, it writes code from scratch, and that code fails in real time.
 
-It contains everything needed to do that: the demo tooling, the datasets, and the
-already-captured proof from the full study. The written study results live in the
-main project; this packet is scoped to producing the recording.
+**This one repo contains everything** — the full AutoML-Agent system *and* the demo
+tooling (under `experiment/`), the datasets, and the already-captured proof. Clone it,
+read this file, record. Nothing else to download.
 
 ---
 
@@ -37,25 +37,29 @@ the generation step.
 
 ---
 
-## 3. Prerequisites (one-time setup)
+## 3. Setup (one clone, ~5 minutes)
 
-The live demo runs the **real, unmodified AutoML-Agent**, so you need the main project,
-not just this repo.
+Everything is in this one repo — the full, unmodified AutoML-Agent system **and** the
+demo tooling under `experiment/`. No other download needed.
 
-1. **Get the main AutoML-Agent project** (the system under test) from Samarth. The demo
-   tooling imports `agent_manager`, `operation_agent`, and `configs` from it.
-2. **Place this repo's `experiment/` folder at the root of that project** (it is a
-   drop-in copy of the study harness; if the project already has an `experiment/` folder
-   on the study branch, you can just use that).
-3. **Create a virtual environment and install dependencies** of the main project:
+1. **Clone and enter the repo:**
+   ```powershell
+   git clone https://github.com/Samarth-Ad/major-proj-proofing.git
+   cd major-proj-proofing
+   ```
+2. **Create a virtual environment and install dependencies:**
    ```powershell
    python -m venv .venv
    .\.venv\Scripts\Activate.ps1
    pip install -r requirements.txt
    ```
-4. **Provide a working LLM backend** via a `.env` file at the project root (see §4).
+3. **Provide a working LLM backend** — copy the template and fill in ONE backend (see §4):
+   ```powershell
+   copy .env.example .env
+   # then edit .env: set AMLA_LLM and the matching key + model
+   ```
 
-> You do **not** need any of this setup for fallback **B** — see §6.
+> Fallback **B** (§6) needs steps 1–2 only — no backend, no `.env`.
 
 ---
 
@@ -85,7 +89,7 @@ Backend selection is read from the environment at launch, so set it **before** r
 
 ## 5. How to record — LIVE (option A)
 
-From the main project root, with a backend set:
+From the repo root (venv activated, backend set in `.env`):
 
 ```powershell
 # full walkthrough: shows the dataset, the task, then the agent generating + running code
@@ -133,7 +137,7 @@ re-runs them live, so the real tracebacks appear on camera:
 .\.venv\Scripts\python.exe -m experiment.demo_broken --list
 ```
 
-This needs the main project's venv too (it executes the scripts), but **no LLM backend**.
+This needs steps 1–2 of setup (the venv — it executes the scripts), but **no LLM backend** and no `.env`.
 
 ---
 
@@ -169,21 +173,26 @@ non-terminating code (37).
 
 ## 9. What's in this repo
 
+This one repo bundles the whole system plus the demo and the proof:
+
 ```
-experiment/
-├── demo_live.py        ← LIVE demo: dataset → real agent → code generated & broken (option A)
-├── demo_broken.py      ← fallback: re-run already-captured broken scripts live (option B)
-├── config.py           ← models, datasets, the one full-strength config, paths
-├── instrumentation.py  ← logging-only hook that echoes each generated script + result
-├── build_datasets.py / baselines.py   ← rebuild the datasets / classical floors
-├── collect_broken.py   ← rebuilds broken_code/ from the ledger
-├── run_grid.py / analyze.py / report.py  ← the full study harness (for reference)
-├── datasets/           ← the 6 tabular CSVs + manifest
-├── broken_code/        ← 282 already-captured broken scripts, grouped by error type (+ INDEX.md)
-├── results/            ← reports, figures, summary.json (the study findings)
-├── docs/               ← HOW_IT_WORKS, FILE_INVENTORY, REPLICATION_GUIDE
-├── ledger.jsonl        ← one record per execution attempt (the primary dataset)
-└── runs/               ← cell_status.json + run_meta.json (outcomes + provenance)
+major-proj-proofing/
+├── README.md              ← this handover doc
+├── requirements.txt       ← install into a venv
+├── .env.example           ← copy to .env and set ONE backend
+├── configs.py             ← backend/LLM routing (AMLA_LLM, model ids, base URLs)
+├── agent_manager/ operation_agent/ data_agent/ model_agent/ prompt_agent/
+│                          ← the AutoML-Agent system under test (unmodified)
+├── prompt_pool/ utils/ experiments/ example_plans/   ← supporting modules
+└── experiment/            ← the study harness + demo tooling + proof
+    ├── demo_live.py       ← LIVE demo: dataset → real agent → code generated & broken (A)
+    ├── demo_broken.py     ← fallback: re-run captured broken scripts live (B)
+    ├── config.py · instrumentation.py · run_grid.py · analyze.py · report.py · …
+    ├── datasets/          ← the 6 tabular CSVs + manifest
+    ├── broken_code/       ← 282 captured broken scripts by error type (+ INDEX.md)
+    ├── results/           ← reports, figures, summary.json (the study findings)
+    ├── docs/              ← HOW_IT_WORKS, FILE_INVENTORY, REPLICATION_GUIDE
+    └── ledger.jsonl · runs/   ← per-attempt records + outcomes/provenance
 ```
 
 Start with `experiment/docs/HOW_IT_WORKS.md` for the plain-language A→Z of the whole
@@ -193,7 +202,7 @@ experiment, and `experiment/broken_code/INDEX.md` for the catalogue of captured 
 
 ## 10. Quick checklist for the recorder
 
-- [ ] Got the main AutoML-Agent project + this `experiment/` folder in its root.
+- [ ] Cloned this repo.
 - [ ] venv created, `requirements.txt` installed.
 - [ ] A working LLM backend set (local Ollama model, or a key in `.env`) — or decide to
       use fallback **B**.
