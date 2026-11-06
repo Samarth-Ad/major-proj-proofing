@@ -1,0 +1,636 @@
+{
+  "meta": {
+    "snapshot_date": "2026-10-31",
+    "git_commit": "9e0d842959a09d96c00768c14d73bd9df6d39023",
+    "full_config": {
+      "verification": true,
+      "decomp": true,
+      "n_plans": 3,
+      "n_candidates": 3,
+      "n_revise": 3,
+      "interactive": false,
+      "full_pipeline": false,
+      "rap": false
+    },
+    "reps": 3,
+    "cell_timeout_sec": 1800,
+    "models": [
+      {
+        "key": "ollama",
+        "backend": "ollama",
+        "model_env": "OLLAMA_MODEL",
+        "model_id": "gpt-oss:120b-cloud"
+      },
+      {
+        "key": "ollama2",
+        "backend": "ollama",
+        "model_env": "OLLAMA_MODEL",
+        "model_id": "gemma4:cloud"
+      }
+    ],
+    "datasets": [
+      "breast_cancer",
+      "titanic",
+      "diabetes",
+      "california",
+      "wine",
+      "iris"
+    ],
+    "prompt_template_sha256": {
+      "tabular_classification": "c10336e5c89d23bdaa067442d5748861e10c84aa1fb5445f84db5c5751842213",
+      "tabular_regression": "87dbac6a5dbf86db031f45436d6cd08ec057c648936c3b835d93f9724bc76450",
+      "tabular_clustering": "527a73f58ed81984d8628be1aec1164660f0f0683501a6588b07c4fa882d9a99"
+    },
+    "started": "2026-10-31T21:08:17"
+  },
+  "n_cells_recorded": 39,
+  "n_cells_total": 72,
+  "n_infra_cells": 3,
+  "overall": {
+    "n_cells_with_code": 36,
+    "n_infra_cells": 3,
+    "first_attempt_failure": {
+      "k": 33,
+      "n": 36,
+      "rate": 0.9167,
+      "ci_low": 0.7817,
+      "ci_high": 0.9713
+    },
+    "per_execution_failure": {
+      "k": 282,
+      "n": 309,
+      "rate": 0.9126,
+      "ci_low": 0.8759,
+      "ci_high": 0.9393
+    },
+    "final_outcome_counts": {
+      "working": 27,
+      "unrecoverable": 5,
+      "incomplete": 4
+    },
+    "final_unrecoverable": {
+      "k": 9,
+      "n": 36,
+      "rate": 0.25,
+      "ci_low": 0.1375,
+      "ci_high": 0.4107
+    },
+    "repair_attempts_to_success": {
+      "0": 3,
+      "1": 5,
+      "2": 7,
+      "3": 2,
+      "5": 1,
+      "8": 4,
+      "9": 1,
+      "10": 1,
+      "13": 1,
+      "15": 2
+    }
+  },
+  "per_model": {
+    "gemini": {
+      "n_cells_with_code": 0,
+      "n_infra_cells": 1,
+      "first_attempt_failure": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "per_execution_failure": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "final_outcome_counts": {},
+      "final_unrecoverable": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "repair_attempts_to_success": {}
+    },
+    "groq": {
+      "n_cells_with_code": 0,
+      "n_infra_cells": 1,
+      "first_attempt_failure": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "per_execution_failure": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "final_outcome_counts": {},
+      "final_unrecoverable": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "repair_attempts_to_success": {}
+    },
+    "openrouter": {
+      "n_cells_with_code": 0,
+      "n_infra_cells": 1,
+      "first_attempt_failure": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "per_execution_failure": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "final_outcome_counts": {},
+      "final_unrecoverable": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "ci_low": null,
+        "ci_high": null
+      },
+      "repair_attempts_to_success": {}
+    },
+    "ollama": {
+      "n_cells_with_code": 18,
+      "n_infra_cells": 0,
+      "first_attempt_failure": {
+        "k": 17,
+        "n": 18,
+        "rate": 0.9444,
+        "ci_low": 0.7424,
+        "ci_high": 0.9901
+      },
+      "per_execution_failure": {
+        "k": 227,
+        "n": 240,
+        "rate": 0.9458,
+        "ci_low": 0.9095,
+        "ci_high": 0.9681
+      },
+      "final_outcome_counts": {
+        "working": 13,
+        "unrecoverable": 5
+      },
+      "final_unrecoverable": {
+        "k": 5,
+        "n": 18,
+        "rate": 0.2778,
+        "ci_low": 0.125,
+        "ci_high": 0.5087
+      },
+      "repair_attempts_to_success": {
+        "0": 1,
+        "2": 1,
+        "3": 2,
+        "8": 4,
+        "9": 1,
+        "10": 1,
+        "13": 1,
+        "15": 2
+      }
+    },
+    "ollama2": {
+      "n_cells_with_code": 18,
+      "n_infra_cells": 0,
+      "first_attempt_failure": {
+        "k": 16,
+        "n": 18,
+        "rate": 0.8889,
+        "ci_low": 0.672,
+        "ci_high": 0.969
+      },
+      "per_execution_failure": {
+        "k": 55,
+        "n": 69,
+        "rate": 0.7971,
+        "ci_low": 0.6878,
+        "ci_high": 0.8751
+      },
+      "final_outcome_counts": {
+        "working": 14,
+        "incomplete": 4
+      },
+      "final_unrecoverable": {
+        "k": 4,
+        "n": 18,
+        "rate": 0.2222,
+        "ci_low": 0.09,
+        "ci_high": 0.4522
+      },
+      "repair_attempts_to_success": {
+        "0": 2,
+        "1": 5,
+        "2": 6,
+        "5": 1
+      }
+    }
+  },
+  "taxonomy": {
+    "overall": {
+      "import_error": 94,
+      "other_runtime_error": 45,
+      "non_termination_timeout": 37,
+      "file_error": 33,
+      "wrong_api_usage": 30,
+      "data_or_value_error": 26,
+      "syntax_error": 10,
+      "runtime_error": 6,
+      "undefined_name": 1
+    },
+    "per_model": {
+      "ollama": {
+        "import_error": 91,
+        "other_runtime_error": 44,
+        "file_error": 33,
+        "wrong_api_usage": 27,
+        "data_or_value_error": 13,
+        "syntax_error": 10,
+        "runtime_error": 6,
+        "non_termination_timeout": 3
+      },
+      "ollama2": {
+        "non_termination_timeout": 34,
+        "data_or_value_error": 13,
+        "import_error": 3,
+        "wrong_api_usage": 3,
+        "other_runtime_error": 1,
+        "undefined_name": 1
+      }
+    }
+  },
+  "semantic": {
+    "overall": {
+      "n_checked": 27,
+      "semantic_failure": {
+        "k": 9,
+        "n": 27,
+        "rate": 0.3333,
+        "ci_low": 0.1864,
+        "ci_high": 0.5218
+      },
+      "implausible_or_nan": 1,
+      "missing_metric": 8,
+      "plausible": 18
+    },
+    "per_model": {
+      "ollama": {
+        "n_checked": 13,
+        "semantic_failure": {
+          "k": 7,
+          "n": 13,
+          "rate": 0.5385,
+          "ci_low": 0.2914,
+          "ci_high": 0.7679
+        },
+        "implausible_or_nan": 1,
+        "missing_metric": 6,
+        "plausible": 6
+      },
+      "ollama2": {
+        "n_checked": 14,
+        "semantic_failure": {
+          "k": 2,
+          "n": 14,
+          "rate": 0.1429,
+          "ci_low": 0.0401,
+          "ci_high": 0.3994
+        },
+        "implausible_or_nan": 0,
+        "missing_metric": 2,
+        "plausible": 12
+      }
+    },
+    "details": [
+      {
+        "cell_id": "ollama__iris__rep1",
+        "dataset": "iris",
+        "task": "tabular_clustering",
+        "status": "no_metric_parsed",
+        "reason": "no recognizable metric in output",
+        "parsed": {
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__breast_cancer__rep3",
+        "dataset": "breast_cancer",
+        "task": "tabular_classification",
+        "status": "no_metric_parsed",
+        "reason": "no recognizable metric in output",
+        "parsed": {
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__titanic__rep1",
+        "dataset": "titanic",
+        "task": "tabular_classification",
+        "status": "plausible",
+        "reason": "accuracy 0.8244 vs majority floor 0.6189",
+        "parsed": {
+          "accuracy": 0.8244,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__diabetes__rep2",
+        "dataset": "diabetes",
+        "task": "tabular_regression",
+        "status": "plausible",
+        "reason": "R2 0.37645334005355835 vs floor 0",
+        "parsed": {
+          "r2": 0.37645334005355835,
+          "rmse": 60.89739265059404,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__diabetes__rep3",
+        "dataset": "diabetes",
+        "task": "tabular_regression",
+        "status": "runs_but_wrong",
+        "reason": "R2 -3.6624321937561035 vs floor 0",
+        "parsed": {
+          "r2": -3.6624321937561035,
+          "rmse": 164.7592,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__california__rep1",
+        "dataset": "california",
+        "task": "tabular_regression",
+        "status": "plausible",
+        "reason": "R2 0.771364909849566 vs floor 0",
+        "parsed": {
+          "r2": 0.771364909849566,
+          "rmse": 0.601,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__california__rep2",
+        "dataset": "california",
+        "task": "tabular_regression",
+        "status": "plausible",
+        "reason": "RMSE 0.3328 vs mean-predictor 1.2128",
+        "parsed": {
+          "rmse": 0.3328,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__california__rep3",
+        "dataset": "california",
+        "task": "tabular_regression",
+        "status": "plausible",
+        "reason": "R2 0.3892633318901062 vs floor 0",
+        "parsed": {
+          "r2": 0.3892633318901062,
+          "rmse": 0.5810496130628492,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__wine__rep1",
+        "dataset": "wine",
+        "task": "tabular_clustering",
+        "status": "no_metric_parsed",
+        "reason": "no recognizable metric in output",
+        "parsed": {
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__wine__rep2",
+        "dataset": "wine",
+        "task": "tabular_clustering",
+        "status": "no_metric_parsed",
+        "reason": "no recognizable metric in output",
+        "parsed": {
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__wine__rep3",
+        "dataset": "wine",
+        "task": "tabular_clustering",
+        "status": "no_metric_parsed",
+        "reason": "no recognizable metric in output",
+        "parsed": {
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__iris__rep2",
+        "dataset": "iris",
+        "task": "tabular_clustering",
+        "status": "no_metric_parsed",
+        "reason": "no recognizable metric in output",
+        "parsed": {
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama__iris__rep3",
+        "dataset": "iris",
+        "task": "tabular_clustering",
+        "status": "plausible",
+        "reason": "ARI 0.630326971796236 vs floor 0.0",
+        "parsed": {
+          "ari": 0.630326971796236,
+          "nmi": 0.6653695310393343,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__breast_cancer__rep1",
+        "dataset": "breast_cancer",
+        "task": "tabular_classification",
+        "status": "plausible",
+        "reason": "accuracy 0.9473684210526315 vs majority floor 0.6294",
+        "parsed": {
+          "accuracy": 0.9473684210526315,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__breast_cancer__rep3",
+        "dataset": "breast_cancer",
+        "task": "tabular_classification",
+        "status": "plausible",
+        "reason": "accuracy 0.9298245614035088 vs majority floor 0.6294",
+        "parsed": {
+          "accuracy": 0.9298245614035088,
+          "f1": 0.9459459459459459,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__titanic__rep2",
+        "dataset": "titanic",
+        "task": "tabular_classification",
+        "status": "no_metric_parsed",
+        "reason": "no recognizable metric in output",
+        "parsed": {
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__titanic__rep3",
+        "dataset": "titanic",
+        "task": "tabular_classification",
+        "status": "no_metric_parsed",
+        "reason": "no recognizable metric in output",
+        "parsed": {
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__diabetes__rep2",
+        "dataset": "diabetes",
+        "task": "tabular_regression",
+        "status": "plausible",
+        "reason": "R2 0.4617018903364446 vs floor 0",
+        "parsed": {
+          "r2": 0.4617018903364446,
+          "rmse": 64.0,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__diabetes__rep3",
+        "dataset": "diabetes",
+        "task": "tabular_regression",
+        "status": "plausible",
+        "reason": "R2 0.4617018903364446 vs floor 0",
+        "parsed": {
+          "r2": 0.4617018903364446,
+          "rmse": 64.0,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__california__rep1",
+        "dataset": "california",
+        "task": "tabular_regression",
+        "status": "plausible",
+        "reason": "R2 0.6945996970866235 vs floor 0",
+        "parsed": {
+          "r2": 0.6945996970866235,
+          "rmse": 64.0,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__california__rep3",
+        "dataset": "california",
+        "task": "tabular_regression",
+        "status": "plausible",
+        "reason": "R2 0.8259 vs floor 0",
+        "parsed": {
+          "r2": 0.8259,
+          "rmse": 0.165,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__wine__rep1",
+        "dataset": "wine",
+        "task": "tabular_clustering",
+        "status": "plausible",
+        "reason": "ARI 0.8226798609253811 vs floor 0.0",
+        "parsed": {
+          "ari": 0.8226798609253811,
+          "nmi": 0.8386967708187617,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__wine__rep2",
+        "dataset": "wine",
+        "task": "tabular_clustering",
+        "status": "plausible",
+        "reason": "ARI 1.0 vs floor 0.0",
+        "parsed": {
+          "ari": 1.0,
+          "nmi": 1.0,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__wine__rep3",
+        "dataset": "wine",
+        "task": "tabular_clustering",
+        "status": "plausible",
+        "reason": "ARI 1.0 vs floor 0.0",
+        "parsed": {
+          "ari": 1.0,
+          "nmi": 1.0,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__iris__rep1",
+        "dataset": "iris",
+        "task": "tabular_clustering",
+        "status": "plausible",
+        "reason": "ARI 0.2530487804878049 vs floor 0.0",
+        "parsed": {
+          "ari": 0.2530487804878049,
+          "nmi": 0.5341789351796996,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__iris__rep2",
+        "dataset": "iris",
+        "task": "tabular_clustering",
+        "status": "plausible",
+        "reason": "ARI 0.6410256410256411 vs floor 0.0",
+        "parsed": {
+          "ari": 0.6410256410256411,
+          "nmi": 0.764965969623537,
+          "_has_nan": false
+        }
+      },
+      {
+        "cell_id": "ollama2__iris__rep3",
+        "dataset": "iris",
+        "task": "tabular_clustering",
+        "status": "plausible",
+        "reason": "ARI 0.7589229805886036 vs floor 0.0",
+        "parsed": {
+          "ari": 0.7589229805886036,
+          "nmi": 0.8229303210692565,
+          "_has_nan": false
+        }
+      }
+    ]
+  },
+  "cost_walltime": {
+    "total_llm_tokens": 4117016,
+    "total_wall_sec": 22908.7,
+    "mean_wall_sec_per_cell": 587.4
+  }
+}

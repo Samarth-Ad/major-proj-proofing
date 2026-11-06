@@ -1,0 +1,68 @@
+{
+  "breast_cancer": {
+    "task": "tabular_classification",
+    "target": "target",
+    "metric": "accuracy/F1",
+    "n_classes": 2,
+    "majority_class_accuracy": 0.6294,
+    "majority_class_f1": 0.7725,
+    "reference_logreg_accuracy": 0.986,
+    "reference_logreg_f1": 0.9889,
+    "semantic_rule": "fail if reported accuracy <= majority_class_accuracy (or metric missing/NaN)"
+  },
+  "titanic": {
+    "task": "tabular_classification",
+    "target": "survived",
+    "metric": "accuracy/F1",
+    "n_classes": 2,
+    "majority_class_accuracy": 0.6189,
+    "majority_class_f1": 0.0,
+    "reference_logreg_accuracy": 0.8079,
+    "reference_logreg_f1": 0.7429,
+    "semantic_rule": "fail if reported accuracy <= majority_class_accuracy (or metric missing/NaN)"
+  },
+  "diabetes": {
+    "task": "tabular_regression",
+    "target": "target",
+    "metric": "R2/RMSE/RMSLE",
+    "floor_r2": 0.0,
+    "mean_predictor_rmse": 74.8812,
+    "mean_predictor_rmsle": 0.5712,
+    "reference_rf_r2": 0.4555,
+    "reference_rf_rmse": 54.8732,
+    "semantic_rule": "fail if reported R2 < 0, or reported RMSE/RMSLE >= mean-predictor value (or metric missing/NaN)"
+  },
+  "california": {
+    "task": "tabular_regression",
+    "target": "target",
+    "metric": "R2/RMSE/RMSLE",
+    "floor_r2": 0.0,
+    "mean_predictor_rmse": 1.2128,
+    "mean_predictor_rmsle": 0.3763,
+    "reference_rf_r2": 0.7275,
+    "reference_rf_rmse": 0.633,
+    "semantic_rule": "fail if reported R2 < 0, or reported RMSE/RMSLE >= mean-predictor value (or metric missing/NaN)"
+  },
+  "wine": {
+    "task": "tabular_clustering",
+    "target": "target",
+    "metric": "ARI/NMI/RI",
+    "n_clusters": 3,
+    "floor_ari": 0.0,
+    "floor_nmi": 0.02,
+    "reference_kmeans_ari": 0.8975,
+    "reference_kmeans_nmi": 0.8759,
+    "semantic_rule": "fail if reported ARI <= 0 or NMI < 0.02 (or metric missing/NaN)"
+  },
+  "iris": {
+    "task": "tabular_clustering",
+    "target": "target",
+    "metric": "ARI/NMI/RI",
+    "n_clusters": 3,
+    "floor_ari": 0.0,
+    "floor_nmi": 0.02,
+    "reference_kmeans_ari": 0.6201,
+    "reference_kmeans_nmi": 0.6595,
+    "semantic_rule": "fail if reported ARI <= 0 or NMI < 0.02 (or metric missing/NaN)"
+  }
+}

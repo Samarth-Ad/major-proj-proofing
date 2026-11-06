@@ -1,0 +1,5329 @@
+{
+  "gemini__iris__rep1": {
+    "cell_id": "gemini__iris__rep1",
+    "model_key": "gemini",
+    "backend": "gemini",
+    "model_id": "gemini-flash-latest",
+    "dataset": "iris",
+    "task": "tabular_clustering",
+    "rep": 1,
+    "wall_sec": 120.2,
+    "attempts_archived": 0,
+    "provider_markers": [
+      "429"
+    ],
+    "termination": "pipeline_exception",
+    "final_state": "INIT",
+    "final_rcode": null,
+    "manager_n_attempts": null,
+    "n_revise_remaining": null,
+    "final_code_chars": null,
+    "money": {},
+    "timers": {},
+    "exception_type": "UnboundLocalError",
+    "exception_msg": "cannot access local variable 'response' where it is not associated with a value",
+    "infra_error": true,
+    "retries_used": 1
+  },
+  "groq__iris__rep1": {
+    "cell_id": "groq__iris__rep1",
+    "model_key": "groq",
+    "backend": "groq",
+    "model_id": "openai/gpt-oss-120b",
+    "dataset": "iris",
+    "task": "tabular_clustering",
+    "rep": 1,
+    "wall_sec": 136.8,
+    "attempts_archived": 0,
+    "provider_markers": [
+      "413"
+    ],
+    "termination": "pipeline_exception",
+    "final_state": "ACT",
+    "final_rcode": null,
+    "manager_n_attempts": null,
+    "n_revise_remaining": null,
+    "final_code_chars": null,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 298,
+        "prompt_tokens": 357,
+        "total_tokens": 655,
+        "completion_tokens_details": {
+          "reasoning_tokens": 130
+        },
+        "queue_time": 0.396603584,
+        "prompt_time": 0.088511644,
+        "completion_time": 0.61898621,
+        "total_time": 0.707497854
+      },
+      "manager_plan_1": {
+        "completion_tokens": 3072,
+        "prompt_tokens": 572,
+        "total_tokens": 3644,
+        "completion_tokens_details": {
+          "reasoning_tokens": 240
+        },
+        "queue_time": 0.363258019,
+        "prompt_time": 0.078230053,
+        "completion_time": 6.405617542,
+        "total_time": 6.483847595
+      },
+      "manager_plan_2": {
+        "completion_tokens": 3072,
+        "prompt_tokens": 572,
+        "total_tokens": 3644,
+        "completion_tokens_details": {
+          "reasoning_tokens": 205
+        },
+        "queue_time": 0.351351855,
+        "prompt_time": 0.022179977,
+        "completion_time": 6.364218496,
+        "total_time": 6.386398473
+      },
+      "manager_plan_3": {
+        "completion_tokens": 3072,
+        "prompt_tokens": 572,
+        "total_tokens": 3644,
+        "completion_tokens_details": {
+          "reasoning_tokens": 180
+        },
+        "queue_time": 0.392992016,
+        "prompt_time": 0.029192705,
+        "completion_time": 6.34378783,
+        "total_time": 6.372980535
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3072,
+          "prompt_tokens": 3358,
+          "total_tokens": 6430,
+          "completion_tokens_details": {
+            "reasoning_tokens": 82
+          },
+          "queue_time": 0.441343513,
+          "prompt_time": 0.218075527,
+          "completion_time": 6.400456898,
+          "total_time": 6.618532425
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3072,
+          "prompt_tokens": 3460,
+          "total_tokens": 6532,
+          "completion_tokens_details": {
+            "reasoning_tokens": 230
+          },
+          "queue_time": 0.353927176,
+          "prompt_time": 0.145801824,
+          "completion_time": 6.405977062,
+          "total_time": 6.551778886
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.1435871124267578,
+      "retrieve_knowledge": 0.0,
+      "planning": 34.52522802352905,
+      "planning_total": 34.52522802352905,
+      "data_execution_0": 97.1631326675415
+    },
+    "exception_type": "UnboundLocalError",
+    "exception_msg": "cannot access local variable 'res' where it is not associated with a value",
+    "infra_error": true,
+    "retries_used": 2
+  },
+  "openrouter__iris__rep1": {
+    "cell_id": "openrouter__iris__rep1",
+    "model_key": "openrouter",
+    "backend": "openrouter",
+    "model_id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "dataset": "iris",
+    "task": "tabular_clustering",
+    "rep": 1,
+    "wall_sec": 113.1,
+    "attempts_archived": 0,
+    "provider_markers": [
+      "429",
+      "rate limit"
+    ],
+    "termination": "pipeline_exception",
+    "final_state": "INIT",
+    "final_rcode": null,
+    "manager_n_attempts": null,
+    "n_revise_remaining": null,
+    "final_code_chars": null,
+    "money": {},
+    "timers": {},
+    "exception_type": "UnboundLocalError",
+    "exception_msg": "cannot access local variable 'response' where it is not associated with a value",
+    "infra_error": true,
+    "retries_used": 2
+  },
+  "ollama__iris__rep1": {
+    "cell_id": "ollama__iris__rep1",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "iris",
+    "task": "tabular_clustering",
+    "rep": 1,
+    "wall_sec": 273.5,
+    "attempts_archived": 4,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 15420,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 305,
+        "prompt_tokens": 358,
+        "total_tokens": 663,
+        "prompt_tokens_details": {
+          "cached_tokens": 48
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 3936,
+        "prompt_tokens": 573,
+        "total_tokens": 4509,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 3206,
+        "prompt_tokens": 573,
+        "total_tokens": 3779,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 3853,
+        "prompt_tokens": 573,
+        "total_tokens": 4426,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 4395,
+          "prompt_tokens": 4139,
+          "total_tokens": 8534,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3170,
+          "prompt_tokens": 4786,
+          "total_tokens": 7956,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2690,
+          "prompt_tokens": 7259,
+          "total_tokens": 9949,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 4205,
+          "prompt_tokens": 3268,
+          "total_tokens": 7473,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 102,
+        "prompt_tokens": 7490,
+        "total_tokens": 7592,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 4802,
+        "prompt_tokens": 20188,
+        "total_tokens": 24990,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 3824,
+          "prompt_tokens": 6040,
+          "total_tokens": 9864,
+          "prompt_tokens_details": {
+            "cached_tokens": 48
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 3542,
+          "prompt_tokens": 8146,
+          "total_tokens": 11688,
+          "prompt_tokens_details": {
+            "cached_tokens": 4704
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 3786,
+          "prompt_tokens": 8393,
+          "total_tokens": 12179,
+          "prompt_tokens_details": {
+            "cached_tokens": 4704
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 3823,
+          "prompt_tokens": 9039,
+          "total_tokens": 12862,
+          "prompt_tokens_details": {
+            "cached_tokens": 4704
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 204,
+        "prompt_tokens": 4069,
+        "total_tokens": 4273,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.2620935440063477,
+      "retrieve_knowledge": 0.0,
+      "planning": 36.34490942955017,
+      "planning_total": 36.34490942955017,
+      "data_execution_0": 26.858549118041992,
+      "model_execution_0": 32.65728497505188,
+      "plan_execution_total": 135.1666111946106,
+      "execution_verification_0": 0.9377832412719727,
+      "execution_verification_total": 2.8117144107818604,
+      "code_instruction": 13.45109510421753,
+      "implementation": 78.79685711860657,
+      "implementation_verification": 1.310103178024292
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__breast_cancer__rep1": {
+    "cell_id": "ollama__breast_cancer__rep1",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "breast_cancer",
+    "task": "tabular_classification",
+    "rep": 1,
+    "wall_sec": 616.1,
+    "attempts_archived": 25,
+    "provider_markers": [
+      "413"
+    ],
+    "termination": "completed",
+    "final_state": "POST_EXEC",
+    "final_rcode": 1,
+    "manager_n_attempts": 5,
+    "n_revise_remaining": -1,
+    "final_code_chars": 14430,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 269,
+        "prompt_tokens": 348,
+        "total_tokens": 617,
+        "prompt_tokens_details": {
+          "cached_tokens": 48
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 4851,
+        "prompt_tokens": 563,
+        "total_tokens": 5414,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 3506,
+        "prompt_tokens": 563,
+        "total_tokens": 4069,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4115,
+        "prompt_tokens": 563,
+        "total_tokens": 4678,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 4308,
+          "prompt_tokens": 4506,
+          "total_tokens": 8814,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 4252,
+          "prompt_tokens": 4731,
+          "total_tokens": 8983,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2763,
+          "prompt_tokens": 8715,
+          "total_tokens": 11478,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 4117,
+          "prompt_tokens": 3362,
+          "total_tokens": 7479,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 167,
+        "prompt_tokens": 8523,
+        "total_tokens": 8690,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 5164,
+        "prompt_tokens": 22544,
+        "total_tokens": 27708,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 33052,
+          "prompt_tokens": 7896,
+          "total_tokens": 40948,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 3305,
+          "prompt_tokens": 39249,
+          "total_tokens": 42554,
+          "prompt_tokens_details": {
+            "cached_tokens": 6560
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 3486,
+          "prompt_tokens": 9908,
+          "total_tokens": 13394,
+          "prompt_tokens_details": {
+            "cached_tokens": 6560
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 3130,
+          "prompt_tokens": 10199,
+          "total_tokens": 13329,
+          "prompt_tokens_details": {
+            "cached_tokens": 6592
+          }
+        },
+        "Operation_Coding_4": {
+          "completion_tokens": 3427,
+          "prompt_tokens": 9867,
+          "total_tokens": 13294,
+          "prompt_tokens_details": {
+            "cached_tokens": 6608
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 6460,
+        "prompt_tokens": 62839,
+        "total_tokens": 69299,
+        "prompt_tokens_details": {
+          "cached_tokens": 52240
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.1567590236663818,
+      "retrieve_knowledge": 0.0,
+      "planning": 38.948862075805664,
+      "planning_total": 38.948862075805664,
+      "data_execution_0": 24.04302740097046,
+      "model_execution_0": 18.031917572021484,
+      "plan_execution_total": 115.90328550338745,
+      "execution_verification_0": 2.113050937652588,
+      "execution_verification_total": 5.266515731811523,
+      "code_instruction": 16.02240514755249,
+      "implementation": 106.23148322105408,
+      "code_revision": 13.170389413833618
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__breast_cancer__rep2": {
+    "cell_id": "ollama__breast_cancer__rep2",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "breast_cancer",
+    "task": "tabular_classification",
+    "rep": 2,
+    "wall_sec": 919.6,
+    "attempts_archived": 25,
+    "provider_markers": [
+      "413",
+      "429",
+      "503"
+    ],
+    "termination": "completed",
+    "final_state": "POST_EXEC",
+    "final_rcode": 1,
+    "manager_n_attempts": 5,
+    "n_revise_remaining": -1,
+    "final_code_chars": 16805,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 263,
+        "prompt_tokens": 348,
+        "total_tokens": 611,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 4522,
+        "prompt_tokens": 563,
+        "total_tokens": 5085,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4661,
+        "prompt_tokens": 563,
+        "total_tokens": 5224,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4316,
+        "prompt_tokens": 563,
+        "total_tokens": 4879,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3655,
+          "prompt_tokens": 4697,
+          "total_tokens": 8352,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3323,
+          "prompt_tokens": 4061,
+          "total_tokens": 7384,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 3693,
+          "prompt_tokens": 8001,
+          "total_tokens": 11694,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 4205,
+          "prompt_tokens": 4310,
+          "total_tokens": 8515,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 126,
+        "prompt_tokens": 7374,
+        "total_tokens": 7500,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 5360,
+        "prompt_tokens": 21148,
+        "total_tokens": 26508,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 4837,
+          "prompt_tokens": 1585,
+          "total_tokens": 6422,
+          "prompt_tokens_details": {
+            "cached_tokens": 240
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 4151,
+          "prompt_tokens": 5052,
+          "total_tokens": 9203,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 4230,
+          "prompt_tokens": 4509,
+          "total_tokens": 8739,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 4112,
+          "prompt_tokens": 4565,
+          "total_tokens": 8677,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        },
+        "Operation_Coding_4": {
+          "completion_tokens": 4049,
+          "prompt_tokens": 5182,
+          "total_tokens": 9231,
+          "prompt_tokens_details": {
+            "cached_tokens": 576
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 7192,
+        "prompt_tokens": 64999,
+        "total_tokens": 72191,
+        "prompt_tokens_details": {
+          "cached_tokens": 48032
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.9663290977478027,
+      "retrieve_knowledge": 0.0,
+      "planning": 42.360265254974365,
+      "planning_total": 42.360265254974365,
+      "data_execution_0": 22.902071237564087,
+      "model_execution_0": 20.97497034072876,
+      "plan_execution_total": 120.36347317695618,
+      "execution_verification_0": 1.8810489177703857,
+      "execution_verification_total": 3.944016695022583,
+      "code_instruction": 5.886376619338989,
+      "implementation": 366.07588171958923,
+      "code_revision": 6.301299333572388
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__breast_cancer__rep3": {
+    "cell_id": "ollama__breast_cancer__rep3",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "breast_cancer",
+    "task": "tabular_classification",
+    "rep": 3,
+    "wall_sec": 503.0,
+    "attempts_archived": 16,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "REV",
+    "final_rcode": 0,
+    "manager_n_attempts": 4,
+    "n_revise_remaining": 0,
+    "final_code_chars": 66,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 249,
+        "prompt_tokens": 348,
+        "total_tokens": 597,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 4771,
+        "prompt_tokens": 563,
+        "total_tokens": 5334,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4800,
+        "prompt_tokens": 563,
+        "total_tokens": 5363,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4487,
+        "prompt_tokens": 563,
+        "total_tokens": 5050,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3983,
+          "prompt_tokens": 4870,
+          "total_tokens": 8853,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3742,
+          "prompt_tokens": 4412,
+          "total_tokens": 8154,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 3012,
+          "prompt_tokens": 8499,
+          "total_tokens": 11511,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 4263,
+          "prompt_tokens": 3629,
+          "total_tokens": 7892,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 119,
+        "prompt_tokens": 8099,
+        "total_tokens": 8218,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 5272,
+        "prompt_tokens": 23769,
+        "total_tokens": 29041,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 4383,
+          "prompt_tokens": 9039,
+          "total_tokens": 13422,
+          "prompt_tokens_details": {
+            "cached_tokens": 240
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 8004,
+        "prompt_tokens": 59055,
+        "total_tokens": 67059,
+        "prompt_tokens_details": {
+          "cached_tokens": 47248
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 111,
+        "prompt_tokens": 460,
+        "total_tokens": 571,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.0157091617584229,
+      "retrieve_knowledge": 0.0,
+      "planning": 43.666428089141846,
+      "planning_total": 43.666428089141846,
+      "data_execution_0": 21.270468950271606,
+      "model_execution_0": 25.05806612968445,
+      "plan_execution_total": 144.5064182281494,
+      "execution_verification_0": 2.1725943088531494,
+      "execution_verification_total": 5.171139717102051,
+      "code_instruction": 14.098633050918579,
+      "implementation": 7.745341062545776,
+      "code_revision": 20.115506649017334,
+      "implementation_verification": 0.8305113315582275
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__titanic__rep1": {
+    "cell_id": "ollama__titanic__rep1",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "titanic",
+    "task": "tabular_classification",
+    "rep": 1,
+    "wall_sec": 461.2,
+    "attempts_archived": 14,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 3,
+    "n_revise_remaining": 1,
+    "final_code_chars": 14212,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 297,
+        "prompt_tokens": 366,
+        "total_tokens": 663,
+        "prompt_tokens_details": {
+          "cached_tokens": 208
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 3989,
+        "prompt_tokens": 581,
+        "total_tokens": 4570,
+        "prompt_tokens_details": {
+          "cached_tokens": 208
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4242,
+        "prompt_tokens": 581,
+        "total_tokens": 4823,
+        "prompt_tokens_details": {
+          "cached_tokens": 560
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 3946,
+        "prompt_tokens": 581,
+        "total_tokens": 4527,
+        "prompt_tokens_details": {
+          "cached_tokens": 560
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 4030,
+          "prompt_tokens": 4225,
+          "total_tokens": 8255,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 4298,
+          "prompt_tokens": 4469,
+          "total_tokens": 8767,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2607,
+          "prompt_tokens": 8498,
+          "total_tokens": 11105,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 4402,
+          "prompt_tokens": 3225,
+          "total_tokens": 7627,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 227,
+        "prompt_tokens": 8829,
+        "total_tokens": 9056,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 5136,
+        "prompt_tokens": 25173,
+        "total_tokens": 30309,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 3995,
+          "prompt_tokens": 9959,
+          "total_tokens": 13954,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 3911,
+          "prompt_tokens": 12366,
+          "total_tokens": 16277,
+          "prompt_tokens_details": {
+            "cached_tokens": 8624
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 4109,
+          "prompt_tokens": 13573,
+          "total_tokens": 17682,
+          "prompt_tokens_details": {
+            "cached_tokens": 8768
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 3576,
+          "prompt_tokens": 12571,
+          "total_tokens": 16147,
+          "prompt_tokens_details": {
+            "cached_tokens": 8640
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 8770,
+        "prompt_tokens": 49795,
+        "total_tokens": 58565,
+        "prompt_tokens_details": {
+          "cached_tokens": 36496
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 178,
+        "prompt_tokens": 4078,
+        "total_tokens": 4256,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.5186998844146729,
+      "retrieve_knowledge": 0.0,
+      "planning": 36.368374824523926,
+      "planning_total": 36.368374824523926,
+      "data_execution_0": 21.076601266860962,
+      "model_execution_0": 24.17072296142578,
+      "plan_execution_total": 132.44701266288757,
+      "execution_verification_0": 1.3293921947479248,
+      "execution_verification_total": 3.550071954727173,
+      "code_instruction": 14.385276556015015,
+      "implementation": 65.08838033676147,
+      "code_revision": 21.716819763183594,
+      "implementation_verification": 1.140010118484497
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__titanic__rep2": {
+    "cell_id": "ollama__titanic__rep2",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "titanic",
+    "task": "tabular_classification",
+    "rep": 2,
+    "wall_sec": 565.2,
+    "attempts_archived": 25,
+    "provider_markers": [
+      "413"
+    ],
+    "termination": "completed",
+    "final_state": "POST_EXEC",
+    "final_rcode": 1,
+    "manager_n_attempts": 5,
+    "n_revise_remaining": -1,
+    "final_code_chars": 20805,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 260,
+        "prompt_tokens": 366,
+        "total_tokens": 626,
+        "prompt_tokens_details": {
+          "cached_tokens": 336
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 4987,
+        "prompt_tokens": 581,
+        "total_tokens": 5568,
+        "prompt_tokens_details": {
+          "cached_tokens": 560
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4006,
+        "prompt_tokens": 581,
+        "total_tokens": 4587,
+        "prompt_tokens_details": {
+          "cached_tokens": 560
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 3457,
+        "prompt_tokens": 581,
+        "total_tokens": 4038,
+        "prompt_tokens_details": {
+          "cached_tokens": 560
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 4813,
+          "prompt_tokens": 3829,
+          "total_tokens": 8642,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 9207,
+          "prompt_tokens": 5234,
+          "total_tokens": 14441,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2341,
+          "prompt_tokens": 13025,
+          "total_tokens": 15366,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 3623,
+          "prompt_tokens": 2933,
+          "total_tokens": 6556,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 122,
+        "prompt_tokens": 12832,
+        "total_tokens": 12954,
+        "prompt_tokens_details": {
+          "cached_tokens": 208
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 4883,
+        "prompt_tokens": 28550,
+        "total_tokens": 33433,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 4311,
+          "prompt_tokens": 2853,
+          "total_tokens": 7164,
+          "prompt_tokens_details": {
+            "cached_tokens": 288
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 5302,
+          "prompt_tokens": 5333,
+          "total_tokens": 10635,
+          "prompt_tokens_details": {
+            "cached_tokens": 1520
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 5125,
+          "prompt_tokens": 6807,
+          "total_tokens": 11932,
+          "prompt_tokens_details": {
+            "cached_tokens": 1520
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 4559,
+          "prompt_tokens": 6339,
+          "total_tokens": 10898,
+          "prompt_tokens_details": {
+            "cached_tokens": 1536
+          }
+        },
+        "Operation_Coding_4": {
+          "completion_tokens": 4725,
+          "prompt_tokens": 6481,
+          "total_tokens": 11206,
+          "prompt_tokens_details": {
+            "cached_tokens": 1536
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 1348,
+        "prompt_tokens": 79132,
+        "total_tokens": 80480,
+        "prompt_tokens_details": {
+          "cached_tokens": 66272
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.072418212890625,
+      "retrieve_knowledge": 0.0,
+      "planning": 34.4221305847168,
+      "planning_total": 34.423240661621094,
+      "data_execution_0": 27.98667573928833,
+      "model_execution_0": 19.503876209259033,
+      "plan_execution_total": 121.40500903129578,
+      "execution_verification_0": 1.0955936908721924,
+      "execution_verification_total": 3.1899619102478027,
+      "code_instruction": 12.504629135131836,
+      "implementation": 62.62922763824463,
+      "code_revision": 4.396682977676392
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__titanic__rep3": {
+    "cell_id": "ollama__titanic__rep3",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "titanic",
+    "task": "tabular_classification",
+    "rep": 3,
+    "wall_sec": 957.3,
+    "attempts_archived": 25,
+    "provider_markers": [
+      "413",
+      "502",
+      "quota"
+    ],
+    "termination": "completed",
+    "final_state": "POST_EXEC",
+    "final_rcode": 1,
+    "manager_n_attempts": 5,
+    "n_revise_remaining": -1,
+    "final_code_chars": 14947,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 247,
+        "prompt_tokens": 366,
+        "total_tokens": 613,
+        "prompt_tokens_details": {
+          "cached_tokens": 336
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 4938,
+        "prompt_tokens": 581,
+        "total_tokens": 5519,
+        "prompt_tokens_details": {
+          "cached_tokens": 560
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4149,
+        "prompt_tokens": 581,
+        "total_tokens": 4730,
+        "prompt_tokens_details": {
+          "cached_tokens": 560
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4126,
+        "prompt_tokens": 581,
+        "total_tokens": 4707,
+        "prompt_tokens_details": {
+          "cached_tokens": 560
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3113,
+          "prompt_tokens": 4459,
+          "total_tokens": 7572,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3099,
+          "prompt_tokens": 3527,
+          "total_tokens": 6626,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2765,
+          "prompt_tokens": 7499,
+          "total_tokens": 10264,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 3813,
+          "prompt_tokens": 3349,
+          "total_tokens": 7162,
+          "prompt_tokens_details": {
+            "cached_tokens": 288
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 305,
+        "prompt_tokens": 7031,
+        "total_tokens": 7336,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 4658,
+        "prompt_tokens": 21322,
+        "total_tokens": 25980,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 4013,
+          "prompt_tokens": 1585,
+          "total_tokens": 5598,
+          "prompt_tokens_details": {
+            "cached_tokens": 240
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 3728,
+          "prompt_tokens": 4261,
+          "total_tokens": 7989,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 3519,
+          "prompt_tokens": 4163,
+          "total_tokens": 7682,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 3774,
+          "prompt_tokens": 3792,
+          "total_tokens": 7566,
+          "prompt_tokens_details": {
+            "cached_tokens": 2928
+          }
+        },
+        "Operation_Coding_4": {
+          "completion_tokens": 3478,
+          "prompt_tokens": 3997,
+          "total_tokens": 7475,
+          "prompt_tokens_details": {
+            "cached_tokens": 720
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 5451,
+        "prompt_tokens": 67101,
+        "total_tokens": 72552,
+        "prompt_tokens_details": {
+          "cached_tokens": 46944
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.1682519912719727,
+      "retrieve_knowledge": 0.0,
+      "planning": 36.81434893608093,
+      "planning_total": 36.81434893608093,
+      "data_execution_0": 15.977620363235474,
+      "model_execution_0": 18.1494038105011,
+      "plan_execution_total": 127.81457018852234,
+      "execution_verification_0": 1.451629638671875,
+      "execution_verification_total": 3.701660633087158,
+      "code_instruction": 5.63969349861145,
+      "implementation": 435.40708208084106,
+      "code_revision": 5.089385271072388
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__diabetes__rep1": {
+    "cell_id": "ollama__diabetes__rep1",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "diabetes",
+    "task": "tabular_regression",
+    "rep": 1,
+    "wall_sec": 562.2,
+    "attempts_archived": 25,
+    "provider_markers": [
+      "413"
+    ],
+    "termination": "completed",
+    "final_state": "POST_EXEC",
+    "final_rcode": 1,
+    "manager_n_attempts": 5,
+    "n_revise_remaining": -1,
+    "final_code_chars": 11934,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 257,
+        "prompt_tokens": 339,
+        "total_tokens": 596,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 4106,
+        "prompt_tokens": 554,
+        "total_tokens": 4660,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4750,
+        "prompt_tokens": 554,
+        "total_tokens": 5304,
+        "prompt_tokens_details": {
+          "cached_tokens": 528
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4221,
+        "prompt_tokens": 554,
+        "total_tokens": 4775,
+        "prompt_tokens_details": {
+          "cached_tokens": 528
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 4021,
+          "prompt_tokens": 4622,
+          "total_tokens": 8643,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3442,
+          "prompt_tokens": 4439,
+          "total_tokens": 7881,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 3173,
+          "prompt_tokens": 8038,
+          "total_tokens": 11211,
+          "prompt_tokens_details": {
+            "cached_tokens": 432
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 3891,
+          "prompt_tokens": 3773,
+          "total_tokens": 7664,
+          "prompt_tokens_details": {
+            "cached_tokens": 288
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 128,
+        "prompt_tokens": 7252,
+        "total_tokens": 7380,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 4847,
+        "prompt_tokens": 21992,
+        "total_tokens": 26839,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 3177,
+          "prompt_tokens": 8560,
+          "total_tokens": 11737,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 3088,
+          "prompt_tokens": 10025,
+          "total_tokens": 13113,
+          "prompt_tokens_details": {
+            "cached_tokens": 7184
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 2851,
+          "prompt_tokens": 10098,
+          "total_tokens": 12949,
+          "prompt_tokens_details": {
+            "cached_tokens": 7216
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 3018,
+          "prompt_tokens": 10047,
+          "total_tokens": 13065,
+          "prompt_tokens_details": {
+            "cached_tokens": 7200
+          }
+        },
+        "Operation_Coding_4": {
+          "completion_tokens": 2846,
+          "prompt_tokens": 10152,
+          "total_tokens": 12998,
+          "prompt_tokens_details": {
+            "cached_tokens": 7232
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 7052,
+        "prompt_tokens": 63735,
+        "total_tokens": 70787,
+        "prompt_tokens_details": {
+          "cached_tokens": 52784
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.2940168380737305,
+      "retrieve_knowledge": 0.0,
+      "planning": 37.74635601043701,
+      "planning_total": 37.74635601043701,
+      "data_execution_0": 21.52942728996277,
+      "model_execution_0": 20.356082916259766,
+      "plan_execution_total": 132.05696725845337,
+      "execution_verification_0": 1.055361032485962,
+      "execution_verification_total": 3.399826765060425,
+      "code_instruction": 14.415863990783691,
+      "implementation": 59.0595428943634,
+      "code_revision": 13.220189571380615
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__diabetes__rep2": {
+    "cell_id": "ollama__diabetes__rep2",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "diabetes",
+    "task": "tabular_regression",
+    "rep": 2,
+    "wall_sec": 740.5,
+    "attempts_archived": 9,
+    "provider_markers": [
+      "413",
+      "429",
+      "502",
+      "503"
+    ],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 2,
+    "n_revise_remaining": 2,
+    "final_code_chars": 18491,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 264,
+        "prompt_tokens": 339,
+        "total_tokens": 603,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 5364,
+        "prompt_tokens": 554,
+        "total_tokens": 5918,
+        "prompt_tokens_details": {
+          "cached_tokens": 528
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4332,
+        "prompt_tokens": 554,
+        "total_tokens": 4886,
+        "prompt_tokens_details": {
+          "cached_tokens": 528
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4853,
+        "prompt_tokens": 554,
+        "total_tokens": 5407,
+        "prompt_tokens_details": {
+          "cached_tokens": 528
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 4456,
+          "prompt_tokens": 5031,
+          "total_tokens": 9487,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3570,
+          "prompt_tokens": 4872,
+          "total_tokens": 8442,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2578,
+          "prompt_tokens": 8579,
+          "total_tokens": 11157,
+          "prompt_tokens_details": {
+            "cached_tokens": 432
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 3463,
+          "prompt_tokens": 3178,
+          "total_tokens": 6641,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 139,
+        "prompt_tokens": 7109,
+        "total_tokens": 7248,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 5096,
+        "prompt_tokens": 21333,
+        "total_tokens": 26429,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 5042,
+          "prompt_tokens": 7989,
+          "total_tokens": 13031,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 4790,
+          "prompt_tokens": 12364,
+          "total_tokens": 17154,
+          "prompt_tokens_details": {
+            "cached_tokens": 6608
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 4811,
+          "prompt_tokens": 30221,
+          "total_tokens": 35032,
+          "prompt_tokens_details": {
+            "cached_tokens": 6624
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 4322,
+          "prompt_tokens": 11134,
+          "total_tokens": 15456,
+          "prompt_tokens_details": {
+            "cached_tokens": 6720
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 6716,
+        "prompt_tokens": 33403,
+        "total_tokens": 40119,
+        "prompt_tokens_details": {
+          "cached_tokens": 21312
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 196,
+        "prompt_tokens": 4600,
+        "total_tokens": 4796,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.2691218852996826,
+      "retrieve_knowledge": 0.0,
+      "planning": 42.19804382324219,
+      "planning_total": 42.19804382324219,
+      "data_execution_0": 21.96065092086792,
+      "model_execution_0": 22.554633140563965,
+      "plan_execution_total": 123.59134888648987,
+      "execution_verification_0": 1.3549044132232666,
+      "execution_verification_total": 3.612306594848633,
+      "code_instruction": 21.89852261543274,
+      "implementation": 413.29401302337646,
+      "code_revision": 23.561429023742676,
+      "implementation_verification": 2.3655521869659424
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__diabetes__rep3": {
+    "cell_id": "ollama__diabetes__rep3",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "diabetes",
+    "task": "tabular_regression",
+    "rep": 3,
+    "wall_sec": 218.9,
+    "attempts_archived": 1,
+    "provider_markers": [
+      "413"
+    ],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 14112,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 260,
+        "prompt_tokens": 339,
+        "total_tokens": 599,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 3194,
+        "prompt_tokens": 554,
+        "total_tokens": 3748,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4261,
+        "prompt_tokens": 554,
+        "total_tokens": 4815,
+        "prompt_tokens_details": {
+          "cached_tokens": 528
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4114,
+        "prompt_tokens": 554,
+        "total_tokens": 4668,
+        "prompt_tokens_details": {
+          "cached_tokens": 528
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3237,
+          "prompt_tokens": 4462,
+          "total_tokens": 7699,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3636,
+          "prompt_tokens": 3579,
+          "total_tokens": 7215,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2814,
+          "prompt_tokens": 8089,
+          "total_tokens": 10903,
+          "prompt_tokens_details": {
+            "cached_tokens": 432
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 3577,
+          "prompt_tokens": 3405,
+          "total_tokens": 6982,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 143,
+        "prompt_tokens": 6953,
+        "total_tokens": 7096,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 5141,
+        "prompt_tokens": 21458,
+        "total_tokens": 26599,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 3725,
+          "prompt_tokens": 6004,
+          "total_tokens": 9729,
+          "prompt_tokens_details": {
+            "cached_tokens": 48
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 238,
+        "prompt_tokens": 12696,
+        "total_tokens": 12934,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.5202322006225586,
+      "retrieve_knowledge": 0.0,
+      "planning": 50.61361241340637,
+      "planning_total": 50.61361241340637,
+      "data_execution_0": 18.293633460998535,
+      "model_execution_0": 21.249445915222168,
+      "plan_execution_total": 116.6980094909668,
+      "execution_verification_0": 1.326519250869751,
+      "execution_verification_total": 4.982531309127808,
+      "code_instruction": 16.04872441291809,
+      "implementation": 17.944984197616577,
+      "implementation_verification": 1.6079306602478027
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__california__rep1": {
+    "cell_id": "ollama__california__rep1",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "california",
+    "task": "tabular_regression",
+    "rep": 1,
+    "wall_sec": 341.6,
+    "attempts_archived": 9,
+    "provider_markers": [
+      "502"
+    ],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 2,
+    "n_revise_remaining": 2,
+    "final_code_chars": 19990,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 222,
+        "prompt_tokens": 347,
+        "total_tokens": 569,
+        "prompt_tokens_details": {
+          "cached_tokens": 208
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 3849,
+        "prompt_tokens": 562,
+        "total_tokens": 4411,
+        "prompt_tokens_details": {
+          "cached_tokens": 208
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4738,
+        "prompt_tokens": 562,
+        "total_tokens": 5300,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 5001,
+        "prompt_tokens": 562,
+        "total_tokens": 5563,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 4285,
+          "prompt_tokens": 5211,
+          "total_tokens": 9496,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3463,
+          "prompt_tokens": 4707,
+          "total_tokens": 8170,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2337,
+          "prompt_tokens": 8635,
+          "total_tokens": 10972,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 3368,
+          "prompt_tokens": 2945,
+          "total_tokens": 6313,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 114,
+        "prompt_tokens": 6867,
+        "total_tokens": 6981,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 5310,
+        "prompt_tokens": 22050,
+        "total_tokens": 27360,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 4454,
+          "prompt_tokens": 8056,
+          "total_tokens": 12510,
+          "prompt_tokens_details": {
+            "cached_tokens": 240
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 4492,
+          "prompt_tokens": 11123,
+          "total_tokens": 15615,
+          "prompt_tokens_details": {
+            "cached_tokens": 6672
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 4514,
+          "prompt_tokens": 12780,
+          "total_tokens": 17294,
+          "prompt_tokens_details": {
+            "cached_tokens": 6720
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 4737,
+          "prompt_tokens": 11339,
+          "total_tokens": 16076,
+          "prompt_tokens_details": {
+            "cached_tokens": 7056
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 6641,
+        "prompt_tokens": 31511,
+        "total_tokens": 38152,
+        "prompt_tokens_details": {
+          "cached_tokens": 22016
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 814,
+        "prompt_tokens": 12783,
+        "total_tokens": 13597,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.069098711013794,
+      "retrieve_knowledge": 0.0,
+      "planning": 39.23571562767029,
+      "planning_total": 39.23571562767029,
+      "data_execution_0": 30.255343198776245,
+      "model_execution_0": 21.63182520866394,
+      "plan_execution_total": 124.31989860534668,
+      "execution_verification_0": 0.9212286472320557,
+      "execution_verification_total": 3.845641851425171,
+      "code_instruction": 14.606142520904541,
+      "implementation": 53.371060371398926,
+      "code_revision": 19.345064640045166,
+      "implementation_verification": 2.5786921977996826
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__california__rep2": {
+    "cell_id": "ollama__california__rep2",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "california",
+    "task": "tabular_regression",
+    "rep": 2,
+    "wall_sec": 567.4,
+    "attempts_archived": 4,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 16575,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 212,
+        "prompt_tokens": 347,
+        "total_tokens": 559,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 3960,
+        "prompt_tokens": 562,
+        "total_tokens": 4522,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 5202,
+        "prompt_tokens": 562,
+        "total_tokens": 5764,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4472,
+        "prompt_tokens": 562,
+        "total_tokens": 5034,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3547,
+          "prompt_tokens": 4777,
+          "total_tokens": 8324,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3236,
+          "prompt_tokens": 3965,
+          "total_tokens": 7201,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2942,
+          "prompt_tokens": 7946,
+          "total_tokens": 10888,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 4859,
+          "prompt_tokens": 3550,
+          "total_tokens": 8409,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 118,
+        "prompt_tokens": 7665,
+        "total_tokens": 7783,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 4843,
+        "prompt_tokens": 22576,
+        "total_tokens": 27419,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 4658,
+          "prompt_tokens": 6211,
+          "total_tokens": 10869,
+          "prompt_tokens_details": {
+            "cached_tokens": 240
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 4656,
+          "prompt_tokens": 10593,
+          "total_tokens": 15249,
+          "prompt_tokens_details": {
+            "cached_tokens": 4832
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 4710,
+          "prompt_tokens": 9692,
+          "total_tokens": 14402,
+          "prompt_tokens_details": {
+            "cached_tokens": 4848
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 4250,
+          "prompt_tokens": 9252,
+          "total_tokens": 13502,
+          "prompt_tokens_details": {
+            "cached_tokens": 4848
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 277,
+        "prompt_tokens": 4672,
+        "total_tokens": 4949,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.050482988357544,
+      "retrieve_knowledge": 0.0,
+      "planning": 42.754064321517944,
+      "planning_total": 42.754064321517944,
+      "data_execution_0": 19.073644876480103,
+      "model_execution_0": 23.253457069396973,
+      "plan_execution_total": 113.96373629570007,
+      "execution_verification_0": 1.0972328186035156,
+      "execution_verification_total": 3.2396726608276367,
+      "code_instruction": 16.344738245010376,
+      "implementation": 378.06723165512085,
+      "implementation_verification": 1.3194456100463867
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__california__rep3": {
+    "cell_id": "ollama__california__rep3",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "california",
+    "task": "tabular_regression",
+    "rep": 3,
+    "wall_sec": 362.7,
+    "attempts_archived": 9,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 2,
+    "n_revise_remaining": 2,
+    "final_code_chars": 22616,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 238,
+        "prompt_tokens": 347,
+        "total_tokens": 585,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 5195,
+        "prompt_tokens": 562,
+        "total_tokens": 5757,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4398,
+        "prompt_tokens": 562,
+        "total_tokens": 4960,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4669,
+        "prompt_tokens": 562,
+        "total_tokens": 5231,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3813,
+          "prompt_tokens": 5059,
+          "total_tokens": 8872,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3301,
+          "prompt_tokens": 4225,
+          "total_tokens": 7526,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2549,
+          "prompt_tokens": 8348,
+          "total_tokens": 10897,
+          "prompt_tokens_details": {
+            "cached_tokens": 448
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 3762,
+          "prompt_tokens": 3148,
+          "total_tokens": 6910,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 92,
+        "prompt_tokens": 7197,
+        "total_tokens": 7289,
+        "prompt_tokens_details": {
+          "cached_tokens": 208
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 4981,
+        "prompt_tokens": 21550,
+        "total_tokens": 26531,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 5315,
+          "prompt_tokens": 7250,
+          "total_tokens": 12565,
+          "prompt_tokens_details": {
+            "cached_tokens": 240
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 6087,
+          "prompt_tokens": 11119,
+          "total_tokens": 17206,
+          "prompt_tokens_details": {
+            "cached_tokens": 5872
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 5511,
+          "prompt_tokens": 11184,
+          "total_tokens": 16695,
+          "prompt_tokens_details": {
+            "cached_tokens": 5904
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 5473,
+          "prompt_tokens": 11675,
+          "total_tokens": 17148,
+          "prompt_tokens_details": {
+            "cached_tokens": 6304
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 5998,
+        "prompt_tokens": 32568,
+        "total_tokens": 38566,
+        "prompt_tokens_details": {
+          "cached_tokens": 21520
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 307,
+        "prompt_tokens": 5851,
+        "total_tokens": 6158,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.9359204769134521,
+      "retrieve_knowledge": 0.0,
+      "planning": 43.15092420578003,
+      "planning_total": 43.15092420578003,
+      "data_execution_0": 20.78415608406067,
+      "model_execution_0": 18.469493627548218,
+      "plan_execution_total": 119.36521196365356,
+      "execution_verification_0": 0.8961594104766846,
+      "execution_verification_total": 5.026155948638916,
+      "code_instruction": 13.673930406570435,
+      "implementation": 81.50529432296753,
+      "code_revision": 17.772716999053955,
+      "implementation_verification": 1.5121755599975586
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__wine__rep1": {
+    "cell_id": "ollama__wine__rep1",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "wine",
+    "task": "tabular_clustering",
+    "rep": 1,
+    "wall_sec": 327.8,
+    "attempts_archived": 9,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 2,
+    "n_revise_remaining": 2,
+    "final_code_chars": 18024,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 150,
+        "prompt_tokens": 358,
+        "total_tokens": 508,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 4470,
+        "prompt_tokens": 573,
+        "total_tokens": 5043,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4648,
+        "prompt_tokens": 573,
+        "total_tokens": 5221,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 3799,
+        "prompt_tokens": 573,
+        "total_tokens": 4372,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3312,
+          "prompt_tokens": 4179,
+          "total_tokens": 7491,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3304,
+          "prompt_tokens": 3745,
+          "total_tokens": 7049,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 1903,
+          "prompt_tokens": 7466,
+          "total_tokens": 9369,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 4593,
+          "prompt_tokens": 2512,
+          "total_tokens": 7105,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 124,
+        "prompt_tokens": 7890,
+        "total_tokens": 8014,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 4651,
+        "prompt_tokens": 22359,
+        "total_tokens": 27010,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 4258,
+          "prompt_tokens": 7071,
+          "total_tokens": 11329,
+          "prompt_tokens_details": {
+            "cached_tokens": 240
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 4080,
+          "prompt_tokens": 10040,
+          "total_tokens": 14120,
+          "prompt_tokens_details": {
+            "cached_tokens": 5728
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 4274,
+          "prompt_tokens": 10134,
+          "total_tokens": 14408,
+          "prompt_tokens_details": {
+            "cached_tokens": 5920
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 4143,
+          "prompt_tokens": 10088,
+          "total_tokens": 14231,
+          "prompt_tokens_details": {
+            "cached_tokens": 5744
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 5622,
+        "prompt_tokens": 33098,
+        "total_tokens": 38720,
+        "prompt_tokens_details": {
+          "cached_tokens": 22336
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 218,
+        "prompt_tokens": 4787,
+        "total_tokens": 5005,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 0.9726552963256836,
+      "retrieve_knowledge": 0.0,
+      "planning": 34.886815547943115,
+      "planning_total": 34.886815547943115,
+      "data_execution_0": 19.32442045211792,
+      "model_execution_0": 16.63863182067871,
+      "plan_execution_total": 111.37731099128723,
+      "execution_verification_0": 1.8176209926605225,
+      "execution_verification_total": 3.8666491508483887,
+      "code_instruction": 13.896912813186646,
+      "implementation": 67.15400314331055,
+      "code_revision": 13.8977792263031,
+      "implementation_verification": 1.1319167613983154
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__wine__rep2": {
+    "cell_id": "ollama__wine__rep2",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "wine",
+    "task": "tabular_clustering",
+    "rep": 2,
+    "wall_sec": 464.9,
+    "attempts_archived": 16,
+    "provider_markers": [
+      "413"
+    ],
+    "termination": "completed",
+    "final_state": "REV",
+    "final_rcode": 0,
+    "manager_n_attempts": 4,
+    "n_revise_remaining": 0,
+    "final_code_chars": 78,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 320,
+        "prompt_tokens": 358,
+        "total_tokens": 678,
+        "prompt_tokens_details": {
+          "cached_tokens": 336
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 4925,
+        "prompt_tokens": 573,
+        "total_tokens": 5498,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4164,
+        "prompt_tokens": 573,
+        "total_tokens": 4737,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 3888,
+        "prompt_tokens": 573,
+        "total_tokens": 4461,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3263,
+          "prompt_tokens": 4242,
+          "total_tokens": 7505,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3995,
+          "prompt_tokens": 3688,
+          "total_tokens": 7683,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 3169,
+          "prompt_tokens": 8222,
+          "total_tokens": 11391,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 4016,
+          "prompt_tokens": 3787,
+          "total_tokens": 7803,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 122,
+        "prompt_tokens": 8177,
+        "total_tokens": 8299,
+        "prompt_tokens_details": {
+          "cached_tokens": 208
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 5362,
+        "prompt_tokens": 22365,
+        "total_tokens": 27727,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 8013,
+          "prompt_tokens": 8141,
+          "total_tokens": 16154,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 6654,
+        "prompt_tokens": 58280,
+        "total_tokens": 64934,
+        "prompt_tokens_details": {
+          "cached_tokens": 45312
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 91,
+        "prompt_tokens": 470,
+        "total_tokens": 561,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 2.2014834880828857,
+      "retrieve_knowledge": 0.0,
+      "planning": 37.73269319534302,
+      "planning_total": 37.73269319534302,
+      "data_execution_0": 21.57677698135376,
+      "model_execution_0": 17.211010932922363,
+      "plan_execution_total": 110.47404479980469,
+      "execution_verification_0": 1.0812714099884033,
+      "execution_verification_total": 3.130993127822876,
+      "code_instruction": 26.698363304138184,
+      "implementation": 14.318926334381104,
+      "code_revision": 14.790499925613403,
+      "implementation_verification": 0.760709285736084
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__wine__rep3": {
+    "cell_id": "ollama__wine__rep3",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "wine",
+    "task": "tabular_clustering",
+    "rep": 3,
+    "wall_sec": 377.1,
+    "attempts_archived": 11,
+    "provider_markers": [
+      "413"
+    ],
+    "termination": "completed",
+    "final_state": "REV",
+    "final_rcode": 0,
+    "manager_n_attempts": 3,
+    "n_revise_remaining": 0,
+    "final_code_chars": 39,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 238,
+        "prompt_tokens": 358,
+        "total_tokens": 596,
+        "prompt_tokens_details": {
+          "cached_tokens": 336
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 5119,
+        "prompt_tokens": 4166,
+        "total_tokens": 9285,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 5147,
+        "prompt_tokens": 4166,
+        "total_tokens": 9313,
+        "prompt_tokens_details": {
+          "cached_tokens": 4144
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4857,
+        "prompt_tokens": 4166,
+        "total_tokens": 9023,
+        "prompt_tokens_details": {
+          "cached_tokens": 4144
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 4956,
+          "prompt_tokens": 4153,
+          "total_tokens": 9109,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 4139,
+          "prompt_tokens": 5386,
+          "total_tokens": 9525,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2636,
+          "prompt_tokens": 8235,
+          "total_tokens": 10871,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 5090,
+          "prompt_tokens": 3237,
+          "total_tokens": 8327,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 97,
+        "prompt_tokens": 9051,
+        "total_tokens": 9148,
+        "prompt_tokens_details": {
+          "cached_tokens": 9024
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 4635,
+        "prompt_tokens": 24125,
+        "total_tokens": 28760,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 5438,
+          "prompt_tokens": 7133,
+          "total_tokens": 12571,
+          "prompt_tokens_details": {
+            "cached_tokens": 240
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 5704,
+        "prompt_tokens": 43498,
+        "total_tokens": 49202,
+        "prompt_tokens_details": {
+          "cached_tokens": 33744
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 95,
+        "prompt_tokens": 460,
+        "total_tokens": 555,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      },
+      "manager_fail_plan_reflection": {
+        "completion_tokens": 3767,
+        "prompt_tokens": 43567,
+        "total_tokens": 47334,
+        "prompt_tokens_details": {
+          "cached_tokens": 43472
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.0714085102081299,
+      "retrieve_knowledge": 0.0,
+      "planning": 35.93039608001709,
+      "planning_total": 35.406362771987915,
+      "data_execution_0": 22.018832445144653,
+      "model_execution_0": 18.765592098236084,
+      "plan_execution_total": 111.33197903633118,
+      "execution_verification_0": 1.9901413917541504,
+      "execution_verification_total": 3.9112143516540527,
+      "code_instruction": 14.480520486831665,
+      "implementation": 10.175770998001099,
+      "code_revision": 17.1122887134552,
+      "implementation_verification": 1.6079344749450684,
+      "fail_plan_reflection_3": 11.240086317062378,
+      "plan_revision_3": 47.17048239707947
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__iris__rep2": {
+    "cell_id": "ollama__iris__rep2",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "iris",
+    "task": "tabular_clustering",
+    "rep": 2,
+    "wall_sec": 336.6,
+    "attempts_archived": 10,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 2,
+    "n_revise_remaining": 2,
+    "final_code_chars": 16331,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 273,
+        "prompt_tokens": 358,
+        "total_tokens": 631,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 3934,
+        "prompt_tokens": 573,
+        "total_tokens": 4507,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 3545,
+        "prompt_tokens": 573,
+        "total_tokens": 4118,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4171,
+        "prompt_tokens": 573,
+        "total_tokens": 4744,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 2241,
+          "prompt_tokens": 4580,
+          "total_tokens": 6821,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3679,
+          "prompt_tokens": 2665,
+          "total_tokens": 6344,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 2494,
+          "prompt_tokens": 8233,
+          "total_tokens": 10727,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 3602,
+          "prompt_tokens": 3085,
+          "total_tokens": 6687,
+          "prompt_tokens_details": {
+            "cached_tokens": 272
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 120,
+        "prompt_tokens": 7463,
+        "total_tokens": 7583,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 3799,
+        "prompt_tokens": 21441,
+        "total_tokens": 25240,
+        "prompt_tokens_details": {
+          "cached_tokens": 144
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 3180,
+          "prompt_tokens": 7258,
+          "total_tokens": 10438,
+          "prompt_tokens_details": {
+            "cached_tokens": 240
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 4327,
+          "prompt_tokens": 9272,
+          "total_tokens": 13599,
+          "prompt_tokens_details": {
+            "cached_tokens": 5920
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 4168,
+          "prompt_tokens": 10013,
+          "total_tokens": 14181,
+          "prompt_tokens_details": {
+            "cached_tokens": 5952
+          }
+        },
+        "Operation_Coding_3": {
+          "completion_tokens": 4139,
+          "prompt_tokens": 10428,
+          "total_tokens": 14567,
+          "prompt_tokens_details": {
+            "cached_tokens": 5952
+          }
+        },
+        "Operation_Coding_4": {
+          "completion_tokens": 4191,
+          "prompt_tokens": 10089,
+          "total_tokens": 14280,
+          "prompt_tokens_details": {
+            "cached_tokens": 5952
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 6058,
+        "prompt_tokens": 29523,
+        "total_tokens": 35581,
+        "prompt_tokens_details": {
+          "cached_tokens": 21408
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 355,
+        "prompt_tokens": 4791,
+        "total_tokens": 5146,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 2.1317479610443115,
+      "retrieve_knowledge": 0.0,
+      "planning": 33.315266847610474,
+      "planning_total": 33.315266847610474,
+      "data_execution_0": 17.038017988204956,
+      "model_execution_0": 18.539040088653564,
+      "plan_execution_total": 114.44443655014038,
+      "execution_verification_0": 1.006556510925293,
+      "execution_verification_total": 3.9406144618988037,
+      "code_instruction": 11.526541709899902,
+      "implementation": 78.53087973594666,
+      "code_revision": 14.792617797851562,
+      "implementation_verification": 1.8513405323028564
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama__iris__rep3": {
+    "cell_id": "ollama__iris__rep3",
+    "model_key": "ollama",
+    "backend": "ollama",
+    "model_id": "gpt-oss:120b-cloud",
+    "dataset": "iris",
+    "task": "tabular_clustering",
+    "rep": 3,
+    "wall_sec": 225.5,
+    "attempts_archived": 3,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 18042,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 229,
+        "prompt_tokens": 358,
+        "total_tokens": 587,
+        "prompt_tokens_details": {
+          "cached_tokens": 336
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 4355,
+        "prompt_tokens": 573,
+        "total_tokens": 4928,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 4749,
+        "prompt_tokens": 573,
+        "total_tokens": 5322,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 4070,
+        "prompt_tokens": 573,
+        "total_tokens": 4643,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 3192,
+          "prompt_tokens": 4520,
+          "total_tokens": 7712,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 3795,
+          "prompt_tokens": 3568,
+          "total_tokens": 7363,
+          "prompt_tokens_details": {
+            "cached_tokens": 208
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 3002,
+          "prompt_tokens": 8182,
+          "total_tokens": 11184,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 4360,
+          "prompt_tokens": 3620,
+          "total_tokens": 7980,
+          "prompt_tokens_details": {
+            "cached_tokens": 288
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 115,
+        "prompt_tokens": 7797,
+        "total_tokens": 7912,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 4846,
+        "prompt_tokens": 22296,
+        "total_tokens": 27142,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 3590,
+          "prompt_tokens": 6069,
+          "total_tokens": 9659,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 4075,
+          "prompt_tokens": 8144,
+          "total_tokens": 12219,
+          "prompt_tokens_details": {
+            "cached_tokens": 4736
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 4241,
+          "prompt_tokens": 9096,
+          "total_tokens": 13337,
+          "prompt_tokens_details": {
+            "cached_tokens": 4752
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 426,
+        "prompt_tokens": 5216,
+        "total_tokens": 5642,
+        "prompt_tokens_details": {
+          "cached_tokens": 176
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.2723257541656494,
+      "retrieve_knowledge": 0.0,
+      "planning": 36.712727308273315,
+      "planning_total": 36.712727308273315,
+      "data_execution_0": 19.1782808303833,
+      "model_execution_0": 19.86237096786499,
+      "plan_execution_total": 118.04670214653015,
+      "execution_verification_0": 1.0216479301452637,
+      "execution_verification_total": 3.0931544303894043,
+      "code_instruction": 13.824543237686157,
+      "implementation": 46.85948371887207,
+      "implementation_verification": 1.9858827590942383
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__breast_cancer__rep1": {
+    "cell_id": "ollama2__breast_cancer__rep1",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "breast_cancer",
+    "task": "tabular_classification",
+    "rep": 1,
+    "wall_sec": 777.4,
+    "attempts_archived": 3,
+    "provider_markers": [
+      "502"
+    ],
+    "termination": "completed",
+    "final_state": "REV",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 0,
+    "final_code_chars": 8860,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 102,
+        "prompt_tokens": 303,
+        "total_tokens": 405,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1282,
+        "prompt_tokens": 1588,
+        "total_tokens": 2870,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1118,
+        "prompt_tokens": 1588,
+        "total_tokens": 2706,
+        "prompt_tokens_details": {
+          "cached_tokens": 1568
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1290,
+        "prompt_tokens": 1588,
+        "total_tokens": 2878,
+        "prompt_tokens_details": {
+          "cached_tokens": 1568
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 746,
+          "prompt_tokens": 1692,
+          "total_tokens": 2438,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1397,
+          "prompt_tokens": 1194,
+          "total_tokens": 2591,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 793,
+          "prompt_tokens": 3142,
+          "total_tokens": 3935,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1500,
+          "prompt_tokens": 1412,
+          "total_tokens": 2912,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3317,
+        "total_tokens": 3319,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 1008,
+        "prompt_tokens": 9374,
+        "total_tokens": 10382,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2938,
+          "prompt_tokens": 2707,
+          "total_tokens": 5645,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2877,
+          "prompt_tokens": 4407,
+          "total_tokens": 7284,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 3031,
+          "prompt_tokens": 4251,
+          "total_tokens": 7282,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3527,
+        "total_tokens": 3529,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_fail_plan_reflection": {
+        "completion_tokens": 983,
+        "prompt_tokens": 11436,
+        "total_tokens": 12419,
+        "prompt_tokens_details": {
+          "cached_tokens": 10368
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.0166797637939453,
+      "retrieve_knowledge": 0.0,
+      "planning": 12.881554126739502,
+      "planning_total": 13.198857545852661,
+      "data_execution_0": 8.302672147750854,
+      "model_execution_0": 10.159168004989624,
+      "plan_execution_total": 53.31336951255798,
+      "execution_verification_0": 0.6077015399932861,
+      "execution_verification_total": 1.897420883178711,
+      "code_instruction": 3.9083809852600098,
+      "implementation": 640.2312331199646,
+      "implementation_verification": 0.6048488616943359,
+      "fail_plan_reflection_1": 5.7530434131622314,
+      "plan_revision_1": 18.634597539901733
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__breast_cancer__rep2": {
+    "cell_id": "ollama2__breast_cancer__rep2",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "breast_cancer",
+    "task": "tabular_classification",
+    "rep": 2,
+    "wall_sec": 1800.1,
+    "attempts_archived": 7,
+    "provider_markers": [],
+    "termination": "timeout_after_attempts",
+    "final_state": null,
+    "final_rcode": null,
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__breast_cancer__rep3": {
+    "cell_id": "ollama2__breast_cancer__rep3",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "breast_cancer",
+    "task": "tabular_classification",
+    "rep": 3,
+    "wall_sec": 98.3,
+    "attempts_archived": 1,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 7743,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 104,
+        "prompt_tokens": 303,
+        "total_tokens": 407,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1196,
+        "prompt_tokens": 540,
+        "total_tokens": 1736,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1119,
+        "prompt_tokens": 540,
+        "total_tokens": 1659,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1225,
+        "prompt_tokens": 540,
+        "total_tokens": 1765,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 751,
+          "prompt_tokens": 1768,
+          "total_tokens": 2519,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1342,
+          "prompt_tokens": 1199,
+          "total_tokens": 2541,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 907,
+          "prompt_tokens": 3164,
+          "total_tokens": 4071,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1580,
+          "prompt_tokens": 1526,
+          "total_tokens": 3106,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3343,
+        "total_tokens": 3345,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 1080,
+        "prompt_tokens": 9181,
+        "total_tokens": 10261,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2481,
+          "prompt_tokens": 2779,
+          "total_tokens": 5260,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3331,
+        "total_tokens": 3333,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 0.8653113842010498,
+      "retrieve_knowledge": 0.0,
+      "planning": 12.199201107025146,
+      "planning_total": 12.199201107025146,
+      "data_execution_0": 10.03202486038208,
+      "model_execution_0": 9.644780397415161,
+      "plan_execution_total": 54.766051292419434,
+      "execution_verification_0": 0.6577334403991699,
+      "execution_verification_total": 2.906585454940796,
+      "code_instruction": 5.750896215438843,
+      "implementation": 17.412569999694824,
+      "implementation_verification": 0.6275854110717773
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__titanic__rep1": {
+    "cell_id": "ollama2__titanic__rep1",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "titanic",
+    "task": "tabular_classification",
+    "rep": 1,
+    "wall_sec": 1800.1,
+    "attempts_archived": 15,
+    "provider_markers": [],
+    "termination": "timeout_after_attempts",
+    "final_state": null,
+    "final_rcode": null,
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__titanic__rep2": {
+    "cell_id": "ollama2__titanic__rep2",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "titanic",
+    "task": "tabular_classification",
+    "rep": 2,
+    "wall_sec": 199.1,
+    "attempts_archived": 3,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "REV",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 0,
+    "final_code_chars": 9983,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 90,
+        "prompt_tokens": 318,
+        "total_tokens": 408,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1648,
+        "prompt_tokens": 1708,
+        "total_tokens": 3356,
+        "prompt_tokens_details": {
+          "cached_tokens": 416
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1408,
+        "prompt_tokens": 1708,
+        "total_tokens": 3116,
+        "prompt_tokens_details": {
+          "cached_tokens": 1696
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1416,
+        "prompt_tokens": 1708,
+        "total_tokens": 3124,
+        "prompt_tokens_details": {
+          "cached_tokens": 1696
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 765,
+          "prompt_tokens": 1747,
+          "total_tokens": 2512,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1452,
+          "prompt_tokens": 1209,
+          "total_tokens": 2661,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 802,
+          "prompt_tokens": 3253,
+          "total_tokens": 4055,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1293,
+          "prompt_tokens": 1421,
+          "total_tokens": 2714,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3182,
+        "total_tokens": 3184,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 1027,
+        "prompt_tokens": 8926,
+        "total_tokens": 9953,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2912,
+          "prompt_tokens": 2726,
+          "total_tokens": 5638,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2649,
+          "prompt_tokens": 4488,
+          "total_tokens": 7137,
+          "prompt_tokens_details": {
+            "cached_tokens": 1248
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 2913,
+          "prompt_tokens": 5904,
+          "total_tokens": 8817,
+          "prompt_tokens_details": {
+            "cached_tokens": 1280
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 4233,
+        "total_tokens": 4235,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_fail_plan_reflection": {
+        "completion_tokens": 1086,
+        "prompt_tokens": 11272,
+        "total_tokens": 12358,
+        "prompt_tokens_details": {
+          "cached_tokens": 10080
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 0.8770537376403809,
+      "retrieve_knowledge": 0.0,
+      "planning": 15.059419870376587,
+      "planning_total": 14.86634635925293,
+      "data_execution_0": 9.384570360183716,
+      "model_execution_0": 8.827915906906128,
+      "plan_execution_total": 59.5038845539093,
+      "execution_verification_0": 0.6340136528015137,
+      "execution_verification_total": 1.9105267524719238,
+      "code_instruction": 5.094292879104614,
+      "implementation": 52.33997988700867,
+      "implementation_verification": 0.6370258331298828,
+      "fail_plan_reflection_1": 3.7487661838531494,
+      "plan_revision_1": 18.808186054229736
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__titanic__rep3": {
+    "cell_id": "ollama2__titanic__rep3",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "titanic",
+    "task": "tabular_classification",
+    "rep": 3,
+    "wall_sec": 176.9,
+    "attempts_archived": 2,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "REV",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 0,
+    "final_code_chars": 8839,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 95,
+        "prompt_tokens": 318,
+        "total_tokens": 413,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1531,
+        "prompt_tokens": 1639,
+        "total_tokens": 3170,
+        "prompt_tokens_details": {
+          "cached_tokens": 416
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1396,
+        "prompt_tokens": 1639,
+        "total_tokens": 3035,
+        "prompt_tokens_details": {
+          "cached_tokens": 1632
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1562,
+        "prompt_tokens": 1639,
+        "total_tokens": 3201,
+        "prompt_tokens_details": {
+          "cached_tokens": 1632
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 867,
+          "prompt_tokens": 1855,
+          "total_tokens": 2722,
+          "prompt_tokens_details": {
+            "cached_tokens": 384
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1345,
+          "prompt_tokens": 1311,
+          "total_tokens": 2656,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 795,
+          "prompt_tokens": 3255,
+          "total_tokens": 4050,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1304,
+          "prompt_tokens": 1414,
+          "total_tokens": 2718,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3086,
+        "total_tokens": 3088,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 977,
+        "prompt_tokens": 9140,
+        "total_tokens": 10117,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2556,
+          "prompt_tokens": 2676,
+          "total_tokens": 5232,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2806,
+          "prompt_tokens": 4563,
+          "total_tokens": 7369,
+          "prompt_tokens_details": {
+            "cached_tokens": 1184
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3152,
+        "total_tokens": 3154,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_fail_plan_reflection": {
+        "completion_tokens": 1017,
+        "prompt_tokens": 11321,
+        "total_tokens": 12338,
+        "prompt_tokens_details": {
+          "cached_tokens": 10176
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 0.8348431587219238,
+      "retrieve_knowledge": 0.0,
+      "planning": 15.942198991775513,
+      "planning_total": 13.693084716796875,
+      "data_execution_0": 9.833388328552246,
+      "model_execution_0": 8.822566986083984,
+      "plan_execution_total": 60.521018981933594,
+      "execution_verification_0": 1.4313793182373047,
+      "execution_verification_total": 2.8933255672454834,
+      "code_instruction": 4.103247404098511,
+      "implementation": 30.70467782020569,
+      "implementation_verification": 0.6340913772583008,
+      "fail_plan_reflection_1": 4.732878684997559,
+      "plan_revision_1": 20.67507767677307
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__diabetes__rep1": {
+    "cell_id": "ollama2__diabetes__rep1",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "diabetes",
+    "task": "tabular_regression",
+    "rep": 1,
+    "wall_sec": 1800.1,
+    "attempts_archived": 6,
+    "provider_markers": [
+      "502"
+    ],
+    "termination": "timeout_after_attempts",
+    "final_state": null,
+    "final_rcode": null,
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__diabetes__rep2": {
+    "cell_id": "ollama2__diabetes__rep2",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "diabetes",
+    "task": "tabular_regression",
+    "rep": 2,
+    "wall_sec": 419.3,
+    "attempts_archived": 2,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 7198,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 94,
+        "prompt_tokens": 295,
+        "total_tokens": 389,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1190,
+        "prompt_tokens": 532,
+        "total_tokens": 1722,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1182,
+        "prompt_tokens": 532,
+        "total_tokens": 1714,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1139,
+        "prompt_tokens": 532,
+        "total_tokens": 1671,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 694,
+          "prompt_tokens": 1674,
+          "total_tokens": 2368,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1425,
+          "prompt_tokens": 1138,
+          "total_tokens": 2563,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 912,
+          "prompt_tokens": 3153,
+          "total_tokens": 4065,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1474,
+          "prompt_tokens": 1531,
+          "total_tokens": 3005,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3312,
+        "total_tokens": 3314,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 977,
+        "prompt_tokens": 9355,
+        "total_tokens": 10332,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2459,
+          "prompt_tokens": 2735,
+          "total_tokens": 5194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2401,
+          "prompt_tokens": 3893,
+          "total_tokens": 6294,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3003,
+        "total_tokens": 3005,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.6859591007232666,
+      "retrieve_knowledge": 0.0,
+      "planning": 18.323627471923828,
+      "planning_total": 18.323627471923828,
+      "data_execution_0": 9.34184980392456,
+      "model_execution_0": 8.514879703521729,
+      "plan_execution_total": 59.86810922622681,
+      "execution_verification_0": 0.6347129344940186,
+      "execution_verification_total": 2.0114400386810303,
+      "code_instruction": 3.944817066192627,
+      "implementation": 329.09249806404114,
+      "implementation_verification": 1.4238927364349365
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__diabetes__rep3": {
+    "cell_id": "ollama2__diabetes__rep3",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "diabetes",
+    "task": "tabular_regression",
+    "rep": 3,
+    "wall_sec": 762.2,
+    "attempts_archived": 3,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 6485,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 96,
+        "prompt_tokens": 295,
+        "total_tokens": 391,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1141,
+        "prompt_tokens": 532,
+        "total_tokens": 1673,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1186,
+        "prompt_tokens": 532,
+        "total_tokens": 1718,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1123,
+        "prompt_tokens": 532,
+        "total_tokens": 1655,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 711,
+          "prompt_tokens": 1659,
+          "total_tokens": 2370,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1273,
+          "prompt_tokens": 1155,
+          "total_tokens": 2428,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 839,
+          "prompt_tokens": 2986,
+          "total_tokens": 3825,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1408,
+          "prompt_tokens": 1458,
+          "total_tokens": 2866,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3095,
+        "total_tokens": 3097,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 1007,
+        "prompt_tokens": 9063,
+        "total_tokens": 10070,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2072,
+          "prompt_tokens": 2765,
+          "total_tokens": 4837,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2248,
+          "prompt_tokens": 3536,
+          "total_tokens": 5784,
+          "prompt_tokens_details": {
+            "cached_tokens": 1216
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 2282,
+          "prompt_tokens": 3622,
+          "total_tokens": 5904,
+          "prompt_tokens_details": {
+            "cached_tokens": 1248
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 2670,
+        "total_tokens": 2672,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.711033582687378,
+      "retrieve_knowledge": 0.0,
+      "planning": 15.029466152191162,
+      "planning_total": 15.029466152191162,
+      "data_execution_0": 20.003358364105225,
+      "model_execution_0": 8.74637484550476,
+      "plan_execution_total": 90.78058433532715,
+      "execution_verification_0": 1.4180595874786377,
+      "execution_verification_total": 3.4870479106903076,
+      "code_instruction": 5.36251425743103,
+      "implementation": 640.5639495849609,
+      "implementation_verification": 1.39882230758667
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__california__rep1": {
+    "cell_id": "ollama2__california__rep1",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "california",
+    "task": "tabular_regression",
+    "rep": 1,
+    "wall_sec": 1456.5,
+    "attempts_archived": 6,
+    "provider_markers": [
+      "413",
+      "429",
+      "502",
+      "503"
+    ],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 2,
+    "n_revise_remaining": 2,
+    "final_code_chars": 7915,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 99,
+        "prompt_tokens": 304,
+        "total_tokens": 403,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1197,
+        "prompt_tokens": 541,
+        "total_tokens": 1738,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1220,
+        "prompt_tokens": 541,
+        "total_tokens": 1761,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1212,
+        "prompt_tokens": 541,
+        "total_tokens": 1753,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 701,
+          "prompt_tokens": 1757,
+          "total_tokens": 2458,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1473,
+          "prompt_tokens": 1150,
+          "total_tokens": 2623,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 870,
+          "prompt_tokens": 3284,
+          "total_tokens": 4154,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1438,
+          "prompt_tokens": 1489,
+          "total_tokens": 2927,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3334,
+        "total_tokens": 3336,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 1077,
+        "prompt_tokens": 9402,
+        "total_tokens": 10479,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2554,
+          "prompt_tokens": 2954,
+          "total_tokens": 5508,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      "manager_code_revision": {
+        "completion_tokens": 1196,
+        "prompt_tokens": 19182,
+        "total_tokens": 20378,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3070,
+        "total_tokens": 3072,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.8652424812316895,
+      "retrieve_knowledge": 0.0,
+      "planning": 18.17046022415161,
+      "planning_total": 18.17046022415161,
+      "data_execution_0": 7.6520304679870605,
+      "model_execution_0": 9.655548572540283,
+      "plan_execution_total": 57.140639305114746,
+      "execution_verification_0": 0.6390066146850586,
+      "execution_verification_total": 2.752216339111328,
+      "code_instruction": 5.211188316345215,
+      "implementation": 35.20149540901184,
+      "code_revision": 6.098128318786621,
+      "implementation_verification": 1.4169106483459473
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__california__rep2": {
+    "cell_id": "ollama2__california__rep2",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "california",
+    "task": "tabular_regression",
+    "rep": 2,
+    "wall_sec": 1800.1,
+    "attempts_archived": 5,
+    "provider_markers": [],
+    "termination": "timeout_after_attempts",
+    "final_state": null,
+    "final_rcode": null,
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__california__rep3": {
+    "cell_id": "ollama2__california__rep3",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "california",
+    "task": "tabular_regression",
+    "rep": 3,
+    "wall_sec": 134.7,
+    "attempts_archived": 2,
+    "provider_markers": [
+      "502",
+      "503"
+    ],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 6778,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 114,
+        "prompt_tokens": 304,
+        "total_tokens": 418,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1261,
+        "prompt_tokens": 541,
+        "total_tokens": 1802,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1093,
+        "prompt_tokens": 541,
+        "total_tokens": 1634,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1106,
+        "prompt_tokens": 541,
+        "total_tokens": 1647,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 822,
+          "prompt_tokens": 1649,
+          "total_tokens": 2471,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1416,
+          "prompt_tokens": 1271,
+          "total_tokens": 2687,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 810,
+          "prompt_tokens": 3120,
+          "total_tokens": 3930,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1705,
+          "prompt_tokens": 1429,
+          "total_tokens": 3134,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3543,
+        "total_tokens": 3545,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 1033,
+        "prompt_tokens": 9383,
+        "total_tokens": 10416,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2354,
+          "prompt_tokens": 2791,
+          "total_tokens": 5145,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2216,
+          "prompt_tokens": 6137,
+          "total_tokens": 8353,
+          "prompt_tokens_details": {
+            "cached_tokens": 1248
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 2727,
+        "total_tokens": 2729,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.85227370262146,
+      "retrieve_knowledge": 0.0,
+      "planning": 13.32073712348938,
+      "planning_total": 13.32073712348938,
+      "data_execution_0": 22.943278551101685,
+      "model_execution_0": 10.354287147521973,
+      "plan_execution_total": 72.37081575393677,
+      "execution_verification_0": 0.6989941596984863,
+      "execution_verification_total": 2.795842170715332,
+      "code_instruction": 4.094915390014648,
+      "implementation": 35.86419343948364,
+      "implementation_verification": 1.3952910900115967
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__wine__rep1": {
+    "cell_id": "ollama2__wine__rep1",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "wine",
+    "task": "tabular_clustering",
+    "rep": 1,
+    "wall_sec": 422.5,
+    "attempts_archived": 3,
+    "provider_markers": [
+      "429"
+    ],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 8830,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 103,
+        "prompt_tokens": 314,
+        "total_tokens": 417,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1013,
+        "prompt_tokens": 551,
+        "total_tokens": 1564,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1107,
+        "prompt_tokens": 551,
+        "total_tokens": 1658,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1155,
+        "prompt_tokens": 551,
+        "total_tokens": 1706,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 693,
+          "prompt_tokens": 1710,
+          "total_tokens": 2403,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1331,
+          "prompt_tokens": 1137,
+          "total_tokens": 2468,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 772,
+          "prompt_tokens": 3095,
+          "total_tokens": 3867,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1410,
+          "prompt_tokens": 1391,
+          "total_tokens": 2801,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3174,
+        "total_tokens": 3176,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 964,
+        "prompt_tokens": 8735,
+        "total_tokens": 9699,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2397,
+          "prompt_tokens": 2668,
+          "total_tokens": 5065,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2562,
+          "prompt_tokens": 4024,
+          "total_tokens": 6586,
+          "prompt_tokens_details": {
+            "cached_tokens": 1184
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 2572,
+          "prompt_tokens": 3983,
+          "total_tokens": 6555,
+          "prompt_tokens_details": {
+            "cached_tokens": 1216
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3275,
+        "total_tokens": 3277,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.8892717361450195,
+      "retrieve_knowledge": 0.0,
+      "planning": 17.724796056747437,
+      "planning_total": 17.724796056747437,
+      "data_execution_0": 8.654532194137573,
+      "model_execution_0": 9.473163604736328,
+      "plan_execution_total": 48.91462826728821,
+      "execution_verification_0": 0.6412947177886963,
+      "execution_verification_total": 2.0468602180480957,
+      "code_instruction": 7.193121671676636,
+      "implementation": 340.3023021221161,
+      "implementation_verification": 1.4415950775146484
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__wine__rep2": {
+    "cell_id": "ollama2__wine__rep2",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "wine",
+    "task": "tabular_clustering",
+    "rep": 2,
+    "wall_sec": 88.0,
+    "attempts_archived": 1,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 6391,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 94,
+        "prompt_tokens": 314,
+        "total_tokens": 408,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1067,
+        "prompt_tokens": 551,
+        "total_tokens": 1618,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1197,
+        "prompt_tokens": 551,
+        "total_tokens": 1748,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1123,
+        "prompt_tokens": 551,
+        "total_tokens": 1674,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 611,
+          "prompt_tokens": 1678,
+          "total_tokens": 2289,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1407,
+          "prompt_tokens": 1055,
+          "total_tokens": 2462,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 754,
+          "prompt_tokens": 3139,
+          "total_tokens": 3893,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1339,
+          "prompt_tokens": 1373,
+          "total_tokens": 2712,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3178,
+        "total_tokens": 3180,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 1019,
+        "prompt_tokens": 8657,
+        "total_tokens": 9676,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 1936,
+          "prompt_tokens": 2723,
+          "total_tokens": 4659,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 2461,
+        "total_tokens": 2463,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 0.9078383445739746,
+      "retrieve_knowledge": 0.0,
+      "planning": 14.149430990219116,
+      "planning_total": 14.149430990219116,
+      "data_execution_0": 7.979339122772217,
+      "model_execution_0": 7.3696136474609375,
+      "plan_execution_total": 46.8662383556366,
+      "execution_verification_0": 1.4603171348571777,
+      "execution_verification_total": 3.5611302852630615,
+      "code_instruction": 3.9510438442230225,
+      "implementation": 14.228745698928833,
+      "implementation_verification": 0.5923097133636475
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__wine__rep3": {
+    "cell_id": "ollama2__wine__rep3",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "wine",
+    "task": "tabular_clustering",
+    "rep": 3,
+    "wall_sec": 400.2,
+    "attempts_archived": 2,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 7473,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 122,
+        "prompt_tokens": 314,
+        "total_tokens": 436,
+        "prompt_tokens_details": {
+          "cached_tokens": 288
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1172,
+        "prompt_tokens": 551,
+        "total_tokens": 1723,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1152,
+        "prompt_tokens": 551,
+        "total_tokens": 1703,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1103,
+        "prompt_tokens": 551,
+        "total_tokens": 1654,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 794,
+          "prompt_tokens": 1658,
+          "total_tokens": 2452,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1376,
+          "prompt_tokens": 1238,
+          "total_tokens": 2614,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 780,
+          "prompt_tokens": 3088,
+          "total_tokens": 3868,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1419,
+          "prompt_tokens": 1399,
+          "total_tokens": 2818,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3228,
+        "total_tokens": 3230,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 1067,
+        "prompt_tokens": 8946,
+        "total_tokens": 10013,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2381,
+          "prompt_tokens": 2771,
+          "total_tokens": 5152,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2328,
+          "prompt_tokens": 3905,
+          "total_tokens": 6233,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 2801,
+        "total_tokens": 2803,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 0.9778642654418945,
+      "retrieve_knowledge": 0.0,
+      "planning": 14.245340824127197,
+      "planning_total": 14.245340824127197,
+      "data_execution_0": 7.518116235733032,
+      "model_execution_0": 9.143862247467041,
+      "plan_execution_total": 50.700127363204956,
+      "execution_verification_0": 0.6117146015167236,
+      "execution_verification_total": 2.6651124954223633,
+      "code_instruction": 4.27922511100769,
+      "implementation": 323.7620620727539,
+      "implementation_verification": 0.592839241027832
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__iris__rep1": {
+    "cell_id": "ollama2__iris__rep1",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "iris",
+    "task": "tabular_clustering",
+    "rep": 1,
+    "wall_sec": 442.8,
+    "attempts_archived": 3,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 7568,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 95,
+        "prompt_tokens": 312,
+        "total_tokens": 407,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1135,
+        "prompt_tokens": 549,
+        "total_tokens": 1684,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1039,
+        "prompt_tokens": 549,
+        "total_tokens": 1588,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1019,
+        "prompt_tokens": 549,
+        "total_tokens": 1568,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 636,
+          "prompt_tokens": 1572,
+          "total_tokens": 2208,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1282,
+          "prompt_tokens": 1080,
+          "total_tokens": 2362,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 763,
+          "prompt_tokens": 2907,
+          "total_tokens": 3670,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1269,
+          "prompt_tokens": 1382,
+          "total_tokens": 2651,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 2980,
+        "total_tokens": 2982,
+        "prompt_tokens_details": {
+          "cached_tokens": 160
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 977,
+        "prompt_tokens": 8317,
+        "total_tokens": 9294,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2523,
+          "prompt_tokens": 2681,
+          "total_tokens": 5204,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2446,
+          "prompt_tokens": 4421,
+          "total_tokens": 6867,
+          "prompt_tokens_details": {
+            "cached_tokens": 1184
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 2546,
+          "prompt_tokens": 3880,
+          "total_tokens": 6426,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3004,
+        "total_tokens": 3006,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 1.9509248733520508,
+      "retrieve_knowledge": 0.0,
+      "planning": 16.563513040542603,
+      "planning_total": 16.563513040542603,
+      "data_execution_0": 10.603012323379517,
+      "model_execution_0": 11.832821607589722,
+      "plan_execution_total": 69.60607266426086,
+      "execution_verification_0": 0.663079023361206,
+      "execution_verification_total": 3.004490375518799,
+      "code_instruction": 4.0203938484191895,
+      "implementation": 342.80327320098877,
+      "implementation_verification": 0.619147777557373
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__iris__rep2": {
+    "cell_id": "ollama2__iris__rep2",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "iris",
+    "task": "tabular_clustering",
+    "rep": 2,
+    "wall_sec": 412.6,
+    "attempts_archived": 2,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 7905,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 90,
+        "prompt_tokens": 312,
+        "total_tokens": 402,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1074,
+        "prompt_tokens": 549,
+        "total_tokens": 1623,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1057,
+        "prompt_tokens": 549,
+        "total_tokens": 1606,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1181,
+        "prompt_tokens": 549,
+        "total_tokens": 1730,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 658,
+          "prompt_tokens": 1733,
+          "total_tokens": 2391,
+          "prompt_tokens_details": {
+            "cached_tokens": 352
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1251,
+          "prompt_tokens": 1102,
+          "total_tokens": 2353,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 762,
+          "prompt_tokens": 3037,
+          "total_tokens": 3799,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1220,
+          "prompt_tokens": 1381,
+          "total_tokens": 2601,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 2900,
+        "total_tokens": 2902,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 941,
+        "prompt_tokens": 8461,
+        "total_tokens": 9402,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2259,
+          "prompt_tokens": 2645,
+          "total_tokens": 4904,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 2464,
+          "prompt_tokens": 3657,
+          "total_tokens": 6121,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3012,
+        "total_tokens": 3014,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 5.244023323059082,
+      "retrieve_knowledge": 0.0,
+      "planning": 15.88773226737976,
+      "planning_total": 15.88773226737976,
+      "data_execution_0": 7.607201337814331,
+      "model_execution_0": 7.349442720413208,
+      "plan_execution_total": 55.01997399330139,
+      "execution_verification_0": 1.5744729042053223,
+      "execution_verification_total": 3.6950161457061768,
+      "code_instruction": 3.623472213745117,
+      "implementation": 323.9210765361786,
+      "implementation_verification": 1.4177007675170898
+    },
+    "infra_error": false,
+    "retries_used": 0
+  },
+  "ollama2__iris__rep3": {
+    "cell_id": "ollama2__iris__rep3",
+    "model_key": "ollama2",
+    "backend": "ollama",
+    "model_id": "gemma4:cloud",
+    "dataset": "iris",
+    "task": "tabular_clustering",
+    "rep": 3,
+    "wall_sec": 726.6,
+    "attempts_archived": 3,
+    "provider_markers": [],
+    "termination": "completed",
+    "final_state": "END",
+    "final_rcode": 0,
+    "manager_n_attempts": 1,
+    "n_revise_remaining": 3,
+    "final_code_chars": 5626,
+    "money": {
+      "manager_request_summary": {
+        "completion_tokens": 97,
+        "prompt_tokens": 312,
+        "total_tokens": 409,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_plan_1": {
+        "completion_tokens": 1145,
+        "prompt_tokens": 549,
+        "total_tokens": 1694,
+        "prompt_tokens_details": {
+          "cached_tokens": 96
+        }
+      },
+      "manager_plan_2": {
+        "completion_tokens": 1139,
+        "prompt_tokens": 549,
+        "total_tokens": 1688,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "manager_plan_3": {
+        "completion_tokens": 1182,
+        "prompt_tokens": 549,
+        "total_tokens": 1731,
+        "prompt_tokens_details": {
+          "cached_tokens": 544
+        }
+      },
+      "Data": {
+        "Data_Plan_Decomposition": {
+          "completion_tokens": 698,
+          "prompt_tokens": 1733,
+          "total_tokens": 2431,
+          "prompt_tokens_details": {
+            "cached_tokens": 320
+          }
+        },
+        "Data_Plan_Execution_0": {
+          "completion_tokens": 1364,
+          "prompt_tokens": 1142,
+          "total_tokens": 2506,
+          "prompt_tokens_details": {
+            "cached_tokens": 192
+          }
+        }
+      },
+      "Model": {
+        "Model_Plan_Decomposition": {
+          "completion_tokens": 783,
+          "prompt_tokens": 3152,
+          "total_tokens": 3935,
+          "prompt_tokens_details": {
+            "cached_tokens": 416
+          }
+        },
+        "Model_Plan_Execution_0": {
+          "completion_tokens": 1361,
+          "prompt_tokens": 1402,
+          "total_tokens": 2763,
+          "prompt_tokens_details": {
+            "cached_tokens": 224
+          }
+        }
+      },
+      "manager_execution_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 3155,
+        "total_tokens": 3157,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "manager_code_instruction": {
+        "completion_tokens": 1020,
+        "prompt_tokens": 8460,
+        "total_tokens": 9480,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "Operation": {
+        "Operation_Coding_0": {
+          "completion_tokens": 2235,
+          "prompt_tokens": 2724,
+          "total_tokens": 4959,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "Operation_Coding_1": {
+          "completion_tokens": 1822,
+          "prompt_tokens": 3712,
+          "total_tokens": 5534,
+          "prompt_tokens_details": {
+            "cached_tokens": 1248
+          }
+        },
+        "Operation_Coding_2": {
+          "completion_tokens": 1799,
+          "prompt_tokens": 3299,
+          "total_tokens": 5098,
+          "prompt_tokens_details": {
+            "cached_tokens": 1344
+          }
+        }
+      },
+      "manager_implementation_verification": {
+        "completion_tokens": 2,
+        "prompt_tokens": 2378,
+        "total_tokens": 2380,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "timers": {
+      "request_summary": 0.8957877159118652,
+      "retrieve_knowledge": 0.0,
+      "planning": 15.385497093200684,
+      "planning_total": 15.385497093200684,
+      "data_execution_0": 13.451722621917725,
+      "model_execution_0": 8.857708930969238,
+      "plan_execution_total": 68.93036437034607,
+      "execution_verification_0": 0.6333074569702148,
+      "execution_verification_total": 2.630687713623047,
+      "code_instruction": 3.8582379817962646,
+      "implementation": 630.5756978988647,
+      "implementation_verification": 1.376699447631836
+    },
+    "infra_error": false,
+    "retries_used": 0
+  }
+}

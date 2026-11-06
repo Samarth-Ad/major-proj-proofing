@@ -1,0 +1,44 @@
+{
+  "snapshot_date": "2026-10-31",
+  "git_commit": "9e0d842959a09d96c00768c14d73bd9df6d39023",
+  "full_config": {
+    "verification": true,
+    "decomp": true,
+    "n_plans": 3,
+    "n_candidates": 3,
+    "n_revise": 3,
+    "interactive": false,
+    "full_pipeline": false,
+    "rap": false
+  },
+  "reps": 3,
+  "cell_timeout_sec": 1800,
+  "models": [
+    {
+      "key": "ollama",
+      "backend": "ollama",
+      "model_env": "OLLAMA_MODEL",
+      "model_id": "gpt-oss:120b-cloud"
+    },
+    {
+      "key": "ollama2",
+      "backend": "ollama",
+      "model_env": "OLLAMA_MODEL",
+      "model_id": "gemma4:cloud"
+    }
+  ],
+  "datasets": [
+    "breast_cancer",
+    "titanic",
+    "diabetes",
+    "california",
+    "wine",
+    "iris"
+  ],
+  "prompt_template_sha256": {
+    "tabular_classification": "c10336e5c89d23bdaa067442d5748861e10c84aa1fb5445f84db5c5751842213",
+    "tabular_regression": "87dbac6a5dbf86db031f45436d6cd08ec057c648936c3b835d93f9724bc76450",
+    "tabular_clustering": "527a73f58ed81984d8628be1aec1164660f0f0683501a6588b07c4fa882d9a99"
+  },
+  "started": "2026-10-31T21:08:17"
+}
