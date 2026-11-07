@@ -1,0 +1,20 @@
+.git
+.gitignore
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+.env
+experiment/demo_runs
+# Keep the evidence tree out of the image (the demo doesn't need it; the broken
+# scripts live in broken_code/, which does ship).
+experiment/runs
+# IDE / OS noise
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+# Doc artefacts not needed in the running container
+*.log
+README.md.bak

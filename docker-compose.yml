@@ -1,0 +1,23 @@
+# One service, used interactively with `docker compose run --rm <name>` so stdin
+# is attached and the press-Enter pacing in the demos works.
+services:
+  demo:
+    build: .
+    image: automlagent-proof:latest
+    # Mount .env so the recorder's API key / backend choice is picked up without
+    # rebuilding the image. Mount demo_runs so artifacts survive the container.
+    env_file:
+      - .env
+    volumes:
+      - ./.env:/app/.env:ro
+      - ./experiment/demo_runs:/app/experiment/demo_runs
+    # If the host runs a local Ollama server, let the container reach it.
+    # (On Linux hosts this needs --add-host or host-network mode; this works
+    # on Docker Desktop for Windows/Mac out of the box.)
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    stdin_open: true
+    tty: true
+    # Default command: the LIVE demo. Override on the CLI, e.g.
+    #   docker compose run --rm demo python -m experiment.demo_broken --auto
+    command: python -m experiment.demo_live --dataset titanic
